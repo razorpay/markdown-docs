@@ -1,7 +1,7 @@
 {
   "version": "1.0",
-  "generated": "2026-04-08T13:51:36.962Z",
-  "total": 2213,
+  "generated": "2026-04-08T14:29:17.439Z",
+  "total": 2212,
   "base_url": "https://raw.githubusercontent.com/razorpay/markdown-docs/master/",
   "routes": {
     "announcements/gst-changes": {
@@ -12021,12 +12021,6 @@
       "description": "Download Razorpay SSL certificates and whitelist our API and Webhooks IP addresses.",
       "category": "security",
       "url": "https://raw.githubusercontent.com/razorpay/markdown-docs/master/security/whitelists.md"
-    },
-    "test-doc": {
-      "title": "Test Doc 2",
-      "description": "Know about Razorpay's compliance certifications, firewalls, and authentication methods.",
-      "category": "test-doc",
-      "url": "https://raw.githubusercontent.com/razorpay/markdown-docs/master/test-doc.md"
     },
     "test-ssr": {
       "title": "Testing SSR",
