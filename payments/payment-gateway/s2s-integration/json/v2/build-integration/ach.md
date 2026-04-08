@@ -265,7 +265,7 @@ curl -u [YOUR_KEY_ID]:[YOUR_KEY_SECRET] \
 -H "content-type: application/json" \
 -d '{
   "amount": 50000,
-  "currency": "",
+  "currency": "INR",
   "order_id": "order_GAWN9beXgaqRyO",
   "email": "gaurav.kumar@example.com",
   "contact": "+919876543210",
@@ -497,7 +497,7 @@ curl -u [YOUR_KEY_ID]:[YOUR_KEY_SECRET] \
   "id": "pay_Ja8Pcd1Q2w3X4Y",
   "entity": "payment",
   "amount": 50000,
-  "currency": "",
+  "currency": "INR",
   "status": "captured",
   "order_id": "order_Ja8Pbcd2Ef3GhI",
   "invoice_id": null,

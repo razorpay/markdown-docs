@@ -76,7 +76,7 @@ Order order = client.Order.Fetch(orderId);
     "amount": 2000,
     "amount_paid": 0,
     "amount_due": 2000,
-    "currency": "",
+    "currency": "INR",
     "receipt": null,
     "offer_id": "offer_JGQvQtvJmVDRIA",
     "offers": [

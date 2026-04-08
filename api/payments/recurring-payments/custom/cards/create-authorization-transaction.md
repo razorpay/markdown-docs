@@ -223,7 +223,7 @@ curl -u : \
 -H "Content-Type: application/json" \
 -d '{
   "amount": 100,
-  "currency": "",
+  "currency": "INR",
   "customer_id":"cust_1Aa00000000001",
   "token": {
     "max_amount": 1500000,
@@ -243,7 +243,7 @@ curl -u : \
   "amount": 100,
   "amount_paid": 0,
   "amount_due": 100,
-  "currency": "",
+  "currency": "INR",
   "customer_id":"cust_1Aa00000000001",
   "receipt": "Receipt No. 1",
   "offer_id": null,
@@ -365,7 +365,7 @@ When you use a Callback URL, the response object of the successful payment (`raz
 
     var data = {
       "amount": 100, // in currency subunits. Here 1000 = 1000 paise, which equals to ₹10
-      "currency": "", // Default is INR. We support more than 90 currencies.
+      "currency": "INR", // Default is INR. We support more than 90 currencies.
       "email": "gaurav.kumar@example.com",
       "contact": "+919876543210",
       "notes": {
@@ -420,7 +420,7 @@ When you use a Callback URL, the response object of the successful payment (`raz
     var data = {
       "callback_url": "www.example-callback-url.com",
       "amount": 100, // in currency subunits. Here 1000 = 1000 paise, which equals to ₹10
-      "currency": "", // Default is INR. We support more than 90 currencies.
+      "currency": "INR", // Default is INR. We support more than 90 currencies.
       "email": "gaurav.kumar@example.com",
       "contact": "+919876543210",
       "notes": {
@@ -517,7 +517,7 @@ curl -u :
   },
   "type":"link",
   "amount":"100",
-  "currency":"",
+  "currency":"INR",
   "description":"Registration Link for Gaurav Kumar",
   "subscription_registration":{
     "method":"card",
@@ -572,7 +572,7 @@ curl -u :
   "amount": 100,
   "amount_paid": 0,
   "amount_due": 100,
-  "currency": "",
+  "currency": "INR",
   "currency_symbol": "₹",
   "description": "Registration Link for Gaurav Kumar",
   "notes": {
@@ -967,7 +967,7 @@ The following endpoint cancels a registration link.
         "amount": 100,
         "amount_paid": 0,
         "amount_due": 100,
-        "currency": "",
+        "currency": "INR",
         "currency_symbol": "₹",
         "description": "Registration Link for Gaurav Kumar",
         "notes": {

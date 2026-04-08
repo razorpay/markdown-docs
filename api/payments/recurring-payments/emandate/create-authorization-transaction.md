@@ -2087,7 +2087,7 @@ The following endpoint cancels a registration link.
         "amount": 100,
         "amount_paid": 0,
         "amount_due": 100,
-        "currency": "",
+        "currency": "INR",
         "currency_symbol": "₹",
         "description": "Registration Link for Gaurav Kumar",
         "notes": {

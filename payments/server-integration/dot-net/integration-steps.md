@@ -91,7 +91,7 @@ Charge.cs | Contains the code for verifying payment signature.
                   ```csharp: Request
                   Dictionary input = new Dictionary();
                   input.Add("amount", 100); // Amount is in currency subunits.
-                  input.Add("currency", "");
+                  input.Add("currency", "INR");
                   input.Add("receipt", "12121");
 
                   string key = "";
@@ -109,7 +109,7 @@ Charge.cs | Contains the code for verifying payment signature.
                   "amount": 100,
                   "amount_paid": 0,
                   "amount_due": 100,
-                  "currency": "",
+                  "currency": "INR",
                   "receipt": "receipt#1",
                   "offer_id": null,
                   "status": "created",
@@ -240,7 +240,7 @@ Know more about [Orders API](https://raw.githubusercontent.com/razorpay/markdown
                               var options = {
                                   "key": "YOUR_KEY_ID", // Enter the Key ID generated from the Dashboard
                                   "amount": "50000", // Amount is in currency subunits.
-                                  "currency": "",
+                                  "currency": "INR",
                                   "name": "Acme Corp",
                                   "description": "Buy Green Tea",
                                   "order_id": orderId,
@@ -307,7 +307,7 @@ Know more about [Orders API](https://raw.githubusercontent.com/razorpay/markdown
                               var options = {
                                   "key": "YOUR_KEY_ID", // Enter the Key ID generated from the Dashboard
                                   "amount": "50000", // Amount is in currency subunits. 
-                                  "currency": "",
+                                  "currency": "INR",
                                   "name": "Acme Corp",
                                   "description": "Buy Green Tea",
                                   "order_id": orderId,

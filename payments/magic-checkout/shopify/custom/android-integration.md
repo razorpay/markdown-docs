@@ -399,7 +399,7 @@ Follow the steps given below:
              options.put("image", "http://example.com/image/rzp.jpg");
              options.put("order_id", "order_DBJOWzybf0sJbb");//from response of step 3.
              options.put("theme.color", "#3399cc");
-             options.put("currency", "");
+             options.put("currency", "INR");
              options.put("amount", "50000");//pass amount in currency subunits
              options.put("prefill.email", "gaurav.kumar@example.com");
              options.put("prefill.contact","+919876543210");
@@ -431,7 +431,7 @@ Follow the steps given below:
                  //You can omit the image option to fetch the image from the Dashboard
                  options.put("image","http://example.com/image/rzp.jpg")
                  options.put("theme.color", "#3399cc");
-                 options.put("currency","");
+                 options.put("currency","INR");
                  options.put("order_id", "order_DBJOWzybfXXXX");
                  options.put("amount","50000")//pass amount in currency subunits
 
@@ -1429,7 +1429,7 @@ If 9977665544 is entered, `+91` is added to it as +919977665544.
        "order_id": "#32697",
        "payment_id": "pay_Rk3b76fSqXXXXX",
        "payment_method": "netbanking",
-       "payment_currency": "",
+       "payment_currency": "INR",
        "total_amount": 659430,
        "total_tax": "543.91",
        "shipping_fee": 700,

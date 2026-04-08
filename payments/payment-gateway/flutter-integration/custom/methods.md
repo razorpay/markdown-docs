@@ -110,7 +110,7 @@ onPressed: () {
    var options = {
            'key': key,
            'amount': 100,
-           'currency': '',
+           'currency': 'INR',
            'email': 'gaurav.kumar@example.com',
            'contact': '+919876543210',
            'method': 'netbanking',

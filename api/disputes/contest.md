@@ -25,7 +25,7 @@ In addition to explicitly contesting a dispute, the contest process can also be 
   "entity": "dispute",
   "payment_id": "pay_EsyWjHrfzb59eR",
   "amount": 10000,
-  "currency": "",
+  "currency": "INR",
   "amount_deducted": 0,
   "reason_code": "chargeback",
   "respond_by": 1590604200,

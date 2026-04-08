@@ -285,7 +285,7 @@ curl -u [CLIENT_ID]:[CLIENT_SECRET] \  //This will be Partners Key and Secret.
 -H "X-Razorpay-Account: acc_Ef7ArBsdU5t9XL" //Sub-merchant’s account number (acc_xxxxxxxx) must be passed in the header.
 -d '{
   "amount": 50000,
-  "currency": "",
+  "currency": "INR",
   "receipt": "receipt#1",
   "customer_id": "cust_MpINfSkdEvtdxb",
   "customer_details": {
@@ -518,7 +518,7 @@ Pay
 var options = {
     "key": "YOUR_KEY_ID", // Enter the Key ID generated from the Partners Dashboard.
     "amount": "50000", // Amount is in currency subunits.
-    "currency": "",
+    "currency": "INR",
     "name": "Acme Corp", //your business name.
     "description": "Test Transaction",
     "image": "https://example.com/your_logo",
@@ -549,7 +549,7 @@ Pay
 var options = {
     "key": "YOUR_KEY_ID", // Enter the Key ID generated from the Dashboard.
     "amount": "50000", // Amount is in currency subunits.
-    "currency": "",
+    "currency": "INR",
     "name": "Acme Corp", //your business name.
     "description": "Test Transaction",
     "image": "https://example.com/your_logo",

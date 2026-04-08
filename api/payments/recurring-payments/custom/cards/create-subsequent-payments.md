@@ -24,7 +24,7 @@ curl -u [YOUR_KEY_ID]:[YOUR_KEY_SECRET] \
 -H "Content-Type: application/json" \
 -d '{
   "amount":1000,
-  "currency":"",
+  "currency":"INR",
   "payment_capture": true,
   "receipt":"Receipt No. 1",
   "notification":{ 
@@ -42,7 +42,7 @@ RazorpayClient razorpay = new RazorpayClient("[YOUR_KEY_ID]", "[YOUR_KEY_SECRET]
 
 JSONObject orderRequest = new JSONObject();
 orderRequest.put("amount", 1000);
-orderRequest.put("currency", "");
+orderRequest.put("currency", "INR");
 orderRequest.put("payment_capture", true);
 orderRequest.put("receipt", "Receipt No. 1");
 JSONObject notification = new JSONObject();
@@ -63,7 +63,7 @@ $api->order->create(array(
     'receipt' => '123',
     'amount' => 1000,
     'payment_capture' => true,
-    'currency' => '',
+    'currency' => 'INR',
     'notification' => array(
         'token_id' => 'token_M7K2eFBU7vToaQ',
         'payment_after' => '1634057114'
@@ -79,7 +79,7 @@ var instance = new Razorpay({ key_id: 'YOUR_KEY_ID', key_secret: 'YOUR_SECRET' }
 
 instance.orders.create({
   "amount":1000,
-  "currency":"",
+  "currency":"INR",
   "payment_capture": true,
   "receipt":"Receipt No. 1",
   "notification": {
@@ -97,7 +97,7 @@ client = razorpay.Client(auth=("YOUR_ID", "YOUR_SECRET"))
 
 client.order.create({
     'amount': 1000,
-    'currency': '',
+    'currency': 'INR',
     'payment_capture': True,
     'receipt': 'Receipt No. 1',
     'notification': {
@@ -116,7 +116,7 @@ Razorpay.setup('YOUR_KEY_ID', 'YOUR_SECRET')
 
 para_attr = {
   "amount": 1000,
-  "currency": "",
+  "currency": "INR",
   "payment_capture": true,
   "receipt": "Receipt No. 1",
   "notification": {
@@ -137,7 +137,7 @@ client := razorpay.NewClient("YOUR_KEY_ID", "YOUR_S ECRET")
 
 data:= map[string]interface{}{
   "amount":1000,
-  "currency":"",
+  "currency":"INR",
   "payment_capture": true,
   "receipt":"Receipt No. 1",
   "notification": map[string]interface{}{
@@ -155,7 +155,7 @@ RazorpayClient client = new RazorpayClient("[YOUR_KEY_ID]", "[YOUR_KEY_SECRET]")
 
 Dictionary orderRequest = new Dictionary();
 orderRequest.Add("amount", 1000);
-orderRequest.Add("currency", "");
+orderRequest.Add("currency", "INR");
 orderRequest.Add("receipt", "receipt#12b");
 orderRequest.Add("payment_capture", true);
 Dictionary notification = new Dictionary();
@@ -178,7 +178,7 @@ Order order = client.Order.Create(orderRequest);
    "amount":1000,
    "amount_paid":0,
    "amount_due":1000,
-   "currency":"",
+   "currency":"INR",
    "receipt":"Receipt No. 1",
    "offer_id":null,
    "status":"created",
@@ -316,7 +316,7 @@ curl -u [YOUR_KEY_ID]:[YOUR_KEY_SECRET] \
   "email": "gaurav.kumar@example.com",
   "contact": "+919876543210",
   "amount": 1000,
-  "currency": "",
+  "currency": "INR",
   "order_id": "order_1Aa00000000002",
   "customer_id": "cust_1Aa00000000001",
   "token": "token_1Aa00000000001",
@@ -335,7 +335,7 @@ JSONObject paymentRequest = new JSONObject();
 paymentRequest.put("email", "gaurav.kumar@example.com");
 paymentRequest.put("contact", "+919876543210");
 paymentRequest.put("amount", 1000);
-paymentRequest.put("currency", "");
+paymentRequest.put("currency", "INR");
 paymentRequest.put("order_id", "order_1Aa00000000002");
 paymentRequest.put("customer_id", "cust_1Aa00000000001");
 paymentRequest.put("token", "token_1Aa00000000001");
@@ -350,7 +350,7 @@ Payment payment = razorpay.payments.createRecurringPayment(paymentRequest);
 ```php: PHP
 $api = new Api($key_id, $secret);
 
-$api->payment->createRecurring(array('email'=>'gaurav.kumar@example.com','contact'=>'+919876543210','amount'=>100,'currency'=>'','order_id'=>'order_1Aa00000000002','customer_id'=>'cust_1Aa00000000001','token'=>'token_1Aa00000000001','recurring'=>true,'description'=>'Creating recurring payment for Gaurav Kumar'));
+$api->payment->createRecurring(array('email'=>'gaurav.kumar@example.com','contact'=>'+919876543210','amount'=>100,'currency'=>'INR','order_id'=>'order_1Aa00000000002','customer_id'=>'cust_1Aa00000000001','token'=>'token_1Aa00000000001','recurring'=>true,'description'=>'Creating recurring payment for Gaurav Kumar'));
 
 ```javascript: Node.js
 var instance = new Razorpay({ key_id: 'YOUR_KEY_ID', key_secret: 'YOUR_SECRET' })
@@ -359,7 +359,7 @@ instance.payments.createRecurringPayment({
   "email": "gaurav.kumar@example.com",
   "contact": "+919876543210",
   "amount": 1000,
-  "currency": "",
+  "currency": "INR",
   "order_id": "order_1Aa00000000002",
   "customer_id": "cust_1Aa00000000001",
   "token": "token_1Aa00000000001",
@@ -378,7 +378,7 @@ client.payment.createRecurring({
     'email': 'gaurav.kumar@example.com',
     'contact': +919876543210,
     'amount': 1000,
-    'currency': '',
+    'currency': 'INR',
     'order_id': "order_1Aa00000000002",
     'customer_id': "cust_1Aa00000000001",
     'token': 'token_1Aa00000000001',
@@ -396,7 +396,7 @@ para_attr = {
   "email": "gaurav.kumar@example.com",
   "contact": "+919876543210",
   "amount": 1000,
-  "currency": "",
+  "currency": "INR",
   "order_id": "order_1Aa00000000002",
   "customer_id": "cust_1Aa00000000001",
   "token": "token_1Aa00000000001",
@@ -417,7 +417,7 @@ data:= map[string]interface{}{
   "email": "gaurav.kumar@example.com",
   "contact": "+919876543210",
   "amount": 1000,
-  "currency": "",
+  "currency": "INR",
   "order_id": "order_1Aa00000000002",
   "customer_id": "cust_1Aa00000000001",
   "token": "token_1Aa00000000001",
@@ -437,7 +437,7 @@ Dictionary paymentRequest = new Dictionary();
 paymentRequest.Add("email", "gaurav.kumar@example.com");
 paymentRequest.Add("contact", "+919876543210");
 paymentRequest.Add("amount", 1000);
-paymentRequest.Add("currency", "");
+paymentRequest.Add("currency", "INR");
 paymentRequest.Add("order_id", "order_MZ35KPxZaqxfXq");
 paymentRequest.Add("customer_id", "cust_KUyah9o60OPhfj");
 paymentRequest.Add("token", "token_MZ37MsnhLNH4tN");

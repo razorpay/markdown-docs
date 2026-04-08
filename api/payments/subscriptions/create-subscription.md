@@ -27,7 +27,7 @@ curl -u [YOUR_KEY_ID]:[YOUR_KEY_SECRET] \
          "item":{
             "name":"Delivery charges",
             "amount":3000,
-            "currency":""
+            "currency":"INR"
          }
       }
    ],
@@ -51,7 +51,7 @@ Dictionary linesItem = new Dictionary();
 Dictionary item = new Dictionary();
 item.Add("name", "Delivery charges");
 item.Add("amount", 30000);
-item.Add("currency", "");
+item.Add("currency", "INR");
 linesItem.Add("item", item);
 object[] addons = new object[]{ linesItem };
 subscriptionRequest.Add("addons", addons);
@@ -77,7 +77,7 @@ JSONObject linesItem = new JSONObject();
 JSONObject item = new JSONObject();
 item.put("name","Delivery charges");
 item.put("amount",30000);
-item.put("currency","");
+item.put("currency","INR");
 linesItem.put("item",item);
 addons.add(linesItem);
 subscriptionRequest.put("addons",addons);
@@ -92,7 +92,7 @@ Subscription order = razorpay.subscriptions.create(subscriptionRequest);
 ```php: PHP
 $api = new Api($key_id, $secret);
 
-$api->subscription->create(array('plan_id' => 'plan_7wAosPWtrkhqZw', 'customer_notify' => true,'quantity'=>5, 'total_count' => 6, 'start_at' => 1773461489, 'addons' => array(array('item' => array('name' => 'Delivery charges', 'amount' => 30000, 'currency' => ''))),'notes'=> array('key1'=> 'value3','key2'=> 'value2')));
+$api->subscription->create(array('plan_id' => 'plan_7wAosPWtrkhqZw', 'customer_notify' => true,'quantity'=>5, 'total_count' => 6, 'start_at' => 1773461489, 'addons' => array(array('item' => array('name' => 'Delivery charges', 'amount' => 30000, 'currency' => 'INR'))),'notes'=> array('key1'=> 'value3','key2'=> 'value2')));
 
 ```javascript: Node.js
 var instance = new Razorpay({ key_id: 'YOUR_KEY_ID', key_secret: 'YOUR_SECRET' })
@@ -108,7 +108,7 @@ instance.subscriptions.create({
       item: {
         name: "Delivery charges",
         amount: 30000,
-        currency: ""
+        currency: "INR"
       }
     }
   ],
@@ -129,7 +129,7 @@ client.subscription.create({
     'total_count': 6,
     'start_at': 1773461489,
     'addons': [{'item': {'name': 'Delivery charges', 'amount': 30000,
-               'currency': ''}}],
+               'currency': 'INR'}}],
     'notes': {'key1': 'value3', 'key2': 'value2'}
     })
 
@@ -148,7 +148,7 @@ para_attr = {
       "item": {
         "name": "Delivery charges",
         "amount": 30000,
-        "currency": ""
+        "currency": "INR"
       }
     }
   ],
@@ -176,7 +176,7 @@ data := map[string]interface{}{
       "item":map[string]interface{}{
         "name":"Delivery charges",
         "amount":3000,
-        "currency":"",
+        "currency":"INR",
       },
     },
   },

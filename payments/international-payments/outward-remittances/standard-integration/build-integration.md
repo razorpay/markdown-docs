@@ -276,7 +276,7 @@ curl -u [YOUR_KEY_ID]:[YOUR_KEY_SECRET] \
 -H "content-type: application/json" \
 -d '{
   "amount": 50000,
-  "currency": "",
+  "currency": "INR",
   "receipt": "receipt#1",
   "customer_id": "cust_MpINfSkdEvtdxb",
   "customer_details": {
@@ -506,7 +506,7 @@ Pay
 var options = {
     "key": "YOUR_KEY_ID", // Enter the Key ID generated from the Dashboard
     "amount": "50000", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
-    "currency": "",
+    "currency": "INR",
     "name": "Acme Corp", //your business name
     "description": "Test Transaction",
     "image": "https://example.com/your_logo",
@@ -537,7 +537,7 @@ Pay
 var options = {
     "key": "YOUR_KEY_ID", // Enter the Key ID generated from the Dashboard
     "amount": "50000", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
-    "currency": "",
+    "currency": "INR",
     "name": "Acme Corp", //your business name
     "description": "Test Transaction",
     "image": "https://example.com/your_logo",

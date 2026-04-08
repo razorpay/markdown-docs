@@ -110,7 +110,7 @@ curl -u [YOUR_KEY_ID]:[YOUR_KEY_SECRET] \
 -H "Content-Type: application/json" \
 -d '{
   "amount": 1000000,
-  "currency": "",
+  "currency": "INR",
   "offers": [
     "offer_ANZoaxsOww2X53"
   ]
@@ -123,7 +123,7 @@ RazorpayClient razorpay = new RazorpayClient("[YOUR_KEY_ID]", "[YOUR_KEY_SECRET]
 
         JSONObject orderRequest = new JSONObject();
         orderRequest.put("amount", 1000000); // amount in the smallest currency unit
-        orderRequest.put("currency", "");
+        orderRequest.put("currency", "INR");
         orderRequest.put("offers", Offer);
 
         Order order = razorpayclient.orders.create(orderRequest);
@@ -134,7 +134,7 @@ client = razorpay.Client(auth=("YOUR_ID", "YOUR_SECRET"))
 
 client.order.create({
   "amount": 1000000,
-  "currency": "",
+  "currency": "INR",
   "receipt": "receipt#1",
   "offers": [
     "offer_ANZoaxsOww2X53"
@@ -143,12 +143,12 @@ client.order.create({
 ```php: PHP
 $api = new Api($key_id, $secret);
 
-$api->order->create(array('amount' => 1000000, 'currency' => '', 'offers'=> array('offer_JTUADI4ZWBGWur')));
+$api->order->create(array('amount' => 1000000, 'currency' => 'INR', 'offers'=> array('offer_JTUADI4ZWBGWur')));
 ```ruby: Ruby 
 require "razorpay"
 Razorpay.setup('YOUR_KEY_ID', 'YOUR_SECRET')
 
-order = Razorpay::Order.create amount: 1000000, currency: '', receipt: 'receipt#1',  offers: [
+order = Razorpay::Order.create amount: 1000000, currency: 'INR', receipt: 'receipt#1',  offers: [
     'offer_ANZoaxsOww2X53"'
 ]
 ```js: Node.js
@@ -156,7 +156,7 @@ var instance = new Razorpay({ key_id: 'YOUR_KEY_ID', key_secret: 'YOUR_SECRET' }
 
 instance.orders.create({
   amount: 1000000,
-  currency: "",
+  currency: "INR",
   receipt: "receipt#1",
   offers: [
     "offer_ANZoaxsOww2X53"
@@ -168,7 +168,7 @@ client := razorpay.NewClient("YOUR_KEY_ID", "YOUR_SECRET")
 
 data := map[string]interface{}{
  "amount": 1000000,
- "currency": "",
+ "currency": "INR",
  "receipt": "receipt#1",
   "offers": []interface{}{
   "offer_JTUADI4ZWBGWur",
@@ -183,7 +183,7 @@ body, err := client.Order.Create(data, nil)
   "amount": 1000000,
   "amount_paid": 0,
   "amount_due": 1000000,
-  "currency": "",
+  "currency": "INR",
   "receipt": null,
   "offer_id": "offer_ANZoaxsOww2X53",
   "offers": [
@@ -217,7 +217,7 @@ Pay
 var options = {
     "key": "[YOUR_KEY_ID]",
     "amount": "1000000",
-    "currency": "",
+    "currency": "INR",
     "order_id":"order_FIL1vBOsWFllnO",
     "name": "Acme Corp",
     "description": "Test Transaction",

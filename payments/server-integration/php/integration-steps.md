@@ -104,7 +104,7 @@ success.html | A page to redirect users once the payment is successful.
                   In the sample app, the **index.php** file contains the code for order creation using Orders API.
 
                  ```php: Request
-                 $api->order->create(array('receipt' => '123', 'amount' => 5000, 'currency' => '', 'notes'=> array('key1'=> 'value3','key2'=> 'value2'))); // Amount is in currency subunits. 
+                 $api->order->create(array('receipt' => '123', 'amount' => 5000, 'currency' => 'INR', 'notes'=> array('key1'=> 'value3','key2'=> 'value2'))); // Amount is in currency subunits. 
                  
                  ```json: Response
                  {
@@ -113,7 +113,7 @@ success.html | A page to redirect users once the payment is successful.
                  "amount": 5000,
                  "amount_paid": 0,
                  "amount_due": 5000,
-                 "currency": "",
+                 "currency": "INR",
                  "receipt": "receipt#1",
                  "offer_id": null,
                  "status": "created",
@@ -225,7 +225,7 @@ Know more about [Orders API](https://raw.githubusercontent.com/razorpay/markdown
                   $data = [
                       "key"               => $YOUR_KEY_ID, // Enter the Key ID generated from the Dashboard
                       "amount"            => $5000, // Amount is in currency subunits. 
-                      "currency"          => $,
+                      "currency"          => $INR,
                       "name"              => "Acme Corp",
                       "description"       => "Test transaction",
                       "image"             => "https://cdn.razorpay.com/logos/GhRQcyean79PqE_medium.png",
@@ -263,7 +263,7 @@ Know more about [Orders API](https://raw.githubusercontent.com/razorpay/markdown
                           var options = {
                               key: "' . $YOUR_KEY_ID . '", // Enter the Key ID generated from the Dashboard
                               amount: ' . $order->5000 . ', // Amount is in currency subunits. 
-                              currency: "' . $order-> . '",
+                              currency: "' . $order->INR . '",
                               name: "Acme Corp",
                               description: "Test transaction",
                               image: "https://cdn.razorpay.com/logos/GhRQcyean79PqE_medium.png",

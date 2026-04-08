@@ -60,7 +60,7 @@ curl -u [YOUR_KEY_ID]:[YOUR_KEY_SECRET] \
 -H 'Content-type: application/json' \
 -d '{
   "amount": 1000,
-  "currency": "",
+  "currency": "INR",
   "accept_partial": true,
   "first_min_partial_amount": 100,
   "reference_id": "#21132",
@@ -111,7 +111,7 @@ curl -u [YOUR_KEY_ID]:[YOUR_KEY_SECRET] \
 -H 'Content-type: application/json' \
 -d '{
   "amount": 1000,
-  "currency": "",
+  "currency": "INR",
   "reference_id": "TSsd3ty1e99uu869",
   "description": "Payment for policy no #23y56",
   "customer": {

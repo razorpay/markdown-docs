@@ -83,7 +83,7 @@ Payment payment = client.Payment.Fetch(paymentId);
 
 Dictionary options = new Dictionary();
 options.Add("amount", "");
-options.Add ("currency", "");
+options.Add ("currency", "INR");
 Payment paymentCaptured = payment.Capture(options);
 ```
 

@@ -124,7 +124,7 @@ Razorpay::Payment.fetch(paymentId).refund(para_attr)
   "entity": "refund",
   "amount": 500100,
   "receipt": "Receipt No. 31",
-  "currency": "",
+  "currency": "INR",
   "payment_id": "pay_29QQoUBi66xm2f",
   "notes": [],
   "receipt": null,
@@ -141,7 +141,7 @@ Razorpay::Payment.fetch(paymentId).refund(para_attr)
 {
     "error": {
         "code": "BAD_REQUEST_ERROR",
-        "description": "The amount must be at least  1.00",
+        "description": "The amount must be at least INR 1.00",
         "source": "business",
         "step": "payment_initiation",
         "reason": "input_validation_failed",

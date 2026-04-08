@@ -30,7 +30,7 @@ Use the following code to **Create a Payment**.
        });
        var data = {
         amount: 6666,
-        currency: "",
+        currency: "INR",
         email: "gaurav.kumar@example.com",
         order_id: "order_ISsp1ekSCHgoAw",
         contact: +919876543210,
@@ -445,7 +445,7 @@ After the card is saved, customers can quickly complete the payment for every su
        });
        var data = {
         amount: 6666,
-        currency: "",
+        currency: "INR",
         email: "gaurav.kumar@example.com",
         order_id: "order_ISsp1ekSCHgoAW",
         contact: 9123456780,

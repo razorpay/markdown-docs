@@ -37,7 +37,7 @@ curl -u [YOUR_KEY_ID]:[YOUR_KEY_SECRET] \
 -H 'Content-type: application/json' \
 -d '{
   "amount": 1000,
-  "currency": "",
+  "currency": "INR",
   "accept_partial": true,
   "first_min_partial_amount": 100,
   "expire_by": 1691097057,
@@ -63,7 +63,7 @@ curl -u [YOUR_KEY_ID]:[YOUR_KEY_SECRET] \
 ```php: PHP 
 $api = new Api($key_id, $secret);
 
-$api->paymentLink->create(array('amount'=>500, 'currency'=>'', 'accept_partial'=>true,
+$api->paymentLink->create(array('amount'=>500, 'currency'=>'INR', 'accept_partial'=>true,
 'first_min_partial_amount'=>100, 'description' => 'For XYZ purpose', 'customer' => array('name'=>'Gaurav Kumar',
 'email' => 'gaurav.kumar@example.com', 'contact'=>'+919876543210'),  'notify'=>array('sms'=>true, 'email'=>true) ,
 'reminder_enable'=>true ,'notes'=>array('policy_name'=> 'Life Insurance Policy'),'callback_url' => 'https://example-callback-url.com/',
@@ -74,7 +74,7 @@ var instance = new Razorpay({ key_id: 'YOUR_KEY_ID', key_secret: 'YOUR_SECRET' }
 
 instance.paymentLink.create({
   amount: 500,
-  currency: "",
+  currency: "INR",
   accept_partial: true,
   first_min_partial_amount: 100,
   description: "For XYZ purpose",
@@ -101,7 +101,7 @@ client = razorpay.Client(auth=("YOUR_ID", "YOUR_SECRET"))
 
 client.payment_link.create({
   "amount": 500,
-  "currency": "",
+  "currency": "INR",
   "accept_partial": true,
   "first_min_partial_amount": 100,
   "description": "For XYZ purpose",
@@ -128,7 +128,7 @@ client := razorpay.NewClient("YOUR_KEY_ID", "YOUR_SECRET")
 
 data := map[string]interface{}{
     "amount": 1000,
-    "currency": "",
+    "currency": "INR",
     "accept_partial": true,
     "first_min_partial_amount": 100,
     "expire_by": 1691097057,
@@ -159,7 +159,7 @@ Razorpay.headers = {"Content-type" => "application/json"}
 
 para_attr = {
   "amount": 500,
-  "currency": "",
+  "currency": "INR",
   "accept_partial": true,
   "first_min_partial_amount": 100,
   "description": "For XYZ purpose",
@@ -191,7 +191,7 @@ import com.razorpay.RazorpayException;
 RazorpayClient razorpay = new RazorpayClient("[YOUR_KEY_ID]", "[YOUR_KEY_SECRET]");
 JSONObject paymentLinkRequest = new JSONObject();
 paymentLinkRequest.put("amount",1000);
-paymentLinkRequest.put("currency","");
+paymentLinkRequest.put("currency","INR");
 paymentLinkRequest.put("accept_partial",true);
 paymentLinkRequest.put("first_min_partial_amount",100);
 paymentLinkRequest.put("expire_by",1691097057);
@@ -220,7 +220,7 @@ RazorpayClient client = new RazorpayClient("[YOUR_KEY_ID]", "[YOUR_KEY_SECRET]")
 
 Dictionary paymentLinkRequest = new Dictionary();
 paymentLinkRequest.Add("amount", 1000);
-paymentLinkRequest.Add("currency", "");
+paymentLinkRequest.Add("currency", "INR");
 paymentLinkRequest.Add("accept_partial", true);
 paymentLinkRequest.Add("first_min_partial_amount", 100);
 paymentLinkRequest.Add("expire_by", 1691097057);

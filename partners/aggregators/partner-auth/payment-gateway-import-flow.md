@@ -571,7 +571,7 @@ Pay
 var options = {
     "key": "YOUR_KEY_ID", // Enter the Key ID generated from the Partners Dashboard.
     "amount": "50000", // Amount is in currency subunits.
-    "currency": "",
+    "currency": "INR",
     "name": "Acme Corp", //your business name.
     "description": "Test Transaction",
     "image": "https://example.com/your_logo",
@@ -604,7 +604,7 @@ Pay
 var options = {
     "key": "YOUR_KEY_ID", // Enter the Key ID generated from the Dashboard.
     "amount": "50000", // Amount is in currency subunits.
-    "currency": "",
+    "currency": "INR",
     "name": "Acme Corp", //your business name.
     "description": "Test Transaction",
     "image": "https://example.com/your_logo",

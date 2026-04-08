@@ -374,7 +374,7 @@ While making the payment, the customer enters card details and can choose to sav
            var options = {
                "key": "",
                "amount": "5076",
-               "currency": "",
+               "currency": "INR",
                "name": "Acme Corp",
                "description": "Test Transaction",
                "image": "https://example.com/your_logo",
@@ -413,7 +413,7 @@ While making the payment, the customer enters card details and can choose to sav
 
            ```java: Save Card
            JSONObject payload = new JSONObject();
-           payload.put("currency", "");
+           payload.put("currency", "INR");
            payload.put("customer_id", "cust_4lsdkfldlteskf");
            payload.put("order_id", "order_DBJOWzybf0sJbb");
            // And the remaining fields
@@ -469,7 +469,7 @@ Once the card is saved, customers can complete payments on repeat purchases by o
            var options = {
                "key": "YOUR_KEY_ID", // Enter the Key ID generated from the Dashboard
                "amount": "50000", // Amount is in currency subunits.
-               "currency": "",
+               "currency": "INR",
                "name": "Acme Corp",
                "description": "Test Transaction",
                "order_id":"order_CgmcjRh9ti2lP7",
@@ -516,7 +516,7 @@ Once the card is saved, customers can complete payments on repeat purchases by o
         internal func showPaymentForm(){
         let options: [String:Any] = [
                "amount": "100",
-               "currency": "",//Amount is in currency subunits.
+               "currency": "INR",//Amount is in currency subunits.
                "description": "purchase description",
                "order_id": "order_4xbQrmEoA5WJ0G",
                "image": "https://url-to-image.jpg",

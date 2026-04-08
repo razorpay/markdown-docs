@@ -156,7 +156,7 @@ You can create an order using:
         -H 'content-type:application/json'
         -d '{
             "amount": 50000,
-            "currency": "",
+            "currency": "INR",
             "receipt": "qwsaq1",
             "partial_payment": true,
             "first_payment_min_amount": 230
@@ -166,7 +166,7 @@ You can create an order using:
 
         JSONObject orderRequest = new JSONObject();
         orderRequest.put("amount", 50000); // amount in the smallest currency unit
-        orderRequest.put("currency", "");
+        orderRequest.put("currency", "INR");
         orderRequest.put("receipt", "order_rcptid_11");
 
         Order order = razorpay.Orders.create(orderRequest);
@@ -180,7 +180,7 @@ You can create an order using:
 
         DATA = {
             "amount": 50000,
-            "currency": "",
+            "currency": "INR",
             "receipt": "receipt#1",
             "notes": {
                 "key1": "value3",
@@ -191,27 +191,27 @@ You can create an order using:
         ```php: PHP
         $api = new Api($key_id, $secret);
 
-        $api->order->create(array('receipt' => '123', 'amount' => 50000, 'currency' => '', 'notes'=> array('key1'=> 'value3','key2'=> 'value2')));
+        $api->order->create(array('receipt' => '123', 'amount' => 50000, 'currency' => 'INR', 'notes'=> array('key1'=> 'value3','key2'=> 'value2')));
         ```csharp: .NET
         RazorpayClient client = new RazorpayClient(your_key_id, your_secret);
 
         Dictionary options = new Dictionary();
         options.Add("amount", 50000); // amount in the smallest currency unit
         options.add("receipt", "order_rcptid_11");
-        options.add("currency", "");
+        options.add("currency", "INR");
         Order order = client.Order.Create(options);
         ```ruby: Ruby
         require "razorpay"
         Razorpay.setup('YOUR_KEY_ID', 'YOUR_SECRET')
 
-        options = amount: 50000, currency: '', receipt: ''
+        options = amount: 50000, currency: 'INR', receipt: ''
         order = Razorpay::Order.create
         ```javascript: Node.js
         var instance = new Razorpay({ key_id: 'YOUR_KEY_ID', key_secret: 'YOUR_SECRET' })
 
         instance.orders.create({
         amount: 50000,
-        currency: "",
+        currency: "INR",
         receipt: "receipt#1",
         notes: {
             key1: "value3",
@@ -224,7 +224,7 @@ You can create an order using:
 
         data := map[string]interface{}{
         "amount": 50000,
-        "currency": "",
+        "currency": "INR",
         "receipt": "some_receipt_id"
         }
         body, err := client.Order.Create(data)
@@ -237,7 +237,7 @@ You can create an order using:
             "amount": 50000,
             "amount_paid": 0,
             "amount_due": 50000,
-            "currency": "",
+            "currency": "INR",
             "receipt": "rcptid_11",
             "offer_id": null,
             "status": "created",
@@ -328,7 +328,7 @@ You can create an order using:
              let options: [String:Any] = [
                          "key": "YOUR_KEY_ID",
                          "amount": "100", // This is in currency subunits. 
-                         "currency": "",// We support more that 92 international currencies.
+                         "currency": "INR",// We support more that 92 international currencies.
                          "description": "purchase description",
                          "order_id": "order_DBJOWzybf0sJbb",
                          "image": "https://url-to-image.jpg",
@@ -349,7 +349,7 @@ You can create an order using:
                                      @"key": @"YOUR_KEY_ID",
                                      @"amount": @"1000",  // This is in currency subunits. 
                                      // all optional other than amount.
-                                     @"currency": @"",  // We support more that 92 international currencies.
+                                     @"currency": @"INR",  // We support more that 92 international currencies.
                                      @"image": @"https://url-to-image.jpg",
                                      @"name": @"business or product name",
                                      @"description": @"purchase description",

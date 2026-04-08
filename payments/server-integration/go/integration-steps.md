@@ -102,7 +102,7 @@ failure.html | Displays payment failure message to user post-verification.
   
                   data := map[string]interface{}{
                   "amount": 50000, // Amount is in currency subunits. 
-                  "currency": "",
+                  "currency": "INR",
                   "receipt": "some_receipt_id", 
                   }
                   body, err := client.Order.Create(data, nil)
@@ -114,7 +114,7 @@ failure.html | Displays payment failure message to user post-verification.
                   "amount": 50000,
                   "amount_paid": 0,
                   "amount_due": 50000,
-                  "currency": "",
+                  "currency": "INR",
                   "receipt": "receipt#1",
                   "offer_id": null,
                   "status": "created",
@@ -230,7 +230,7 @@ Know more about [Orders API](https://raw.githubusercontent.com/razorpay/markdown
                   var options = {
                       "key": "YOUR_KEY_ID", // Enter the Key ID generated from the Dashboard
                       "amount": "50000", // Amount is in currency subunits. 
-                      "currency": "",
+                      "currency": "INR",
                       "name": "Acme Corp",
                       "description": "Test Transaction",
                       "image": "https://example.com/your_logo",
@@ -273,8 +273,8 @@ Know more about [Orders API](https://raw.githubusercontent.com/razorpay/markdown
                   
                   var options = {
                       "key": "YOUR_KEY_ID", // Enter the Key ID generated from the Dashboard
-                      "amount": "50000", // Amount is in currency subunits. Default currency is . Hence, 50000 refers to 50000 paise
-                      "currency": "",
+                      "amount": "50000", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+                      "currency": "INR",
                       "name": "Acme Corp",
                       "description": "Test Transaction",
                       "image": "https://example.com/your_logo",
@@ -754,7 +754,7 @@ If 9977665544 is entered, `+91` is added to it as +919977665544.
                  ```go: Go
                  /* Go SDK: https://github.com/razorpay/razorpay-go */
 
-                 webhookbody := `{"entity":"event","account_id":"acc_HVFD0PFnHPAzKj","event":"payment.authorized","contains":["payment"],"payload":{"payment":{"entity":{"id":"pay_JUEM4c0pSLpFEW","entity":"payment","amount":12300,"currency":"","status":"authorized","order_id":"order_JUELuT6cFaHkvd","invoice_id":null,"international":false,"method":"netbanking","amount_refunded":0,"refund_status":null,"captured":false,"description":"#JUELZ1z1EC0pwi","card_id":null,"bank":"SBIN","wallet":null,"vpa":null,"email":"gaurav.kumar@example.com","contact":"+919999999999","notes":[],"fee":null,"tax":null,"error_code":null,"error_description":null,"error_source":null,"error_step":null,"error_reason":null,"acquirer_data":{"bank_transaction_id":"6416615"},"created_at":1652339804}}},"created_at":1652339806}`;
+                 webhookbody := `{"entity":"event","account_id":"acc_HVFD0PFnHPAzKj","event":"payment.authorized","contains":["payment"],"payload":{"payment":{"entity":{"id":"pay_JUEM4c0pSLpFEW","entity":"payment","amount":12300,"currency":"INR","status":"authorized","order_id":"order_JUELuT6cFaHkvd","invoice_id":null,"international":false,"method":"netbanking","amount_refunded":0,"refund_status":null,"captured":false,"description":"#JUELZ1z1EC0pwi","card_id":null,"bank":"SBIN","wallet":null,"vpa":null,"email":"gaurav.kumar@example.com","contact":"+919999999999","notes":[],"fee":null,"tax":null,"error_code":null,"error_description":null,"error_source":null,"error_step":null,"error_reason":null,"acquirer_data":{"bank_transaction_id":"6416615"},"created_at":1652339804}}},"created_at":1652339806}`;
 
                  signature := "56df260ab4647b07b729b0b48d2a95b71de42f109884949e5ec387a2bb8b6919";
                  webhook_secret := "123456";
