@@ -64,20 +64,6 @@ description: A brief description of the document content.
 Document content in Markdown...
 ```
 
-## Contributing
-
-1. Fork the repository
-2. Create a new branch: `git checkout -b feat/your-topic`
-3. Add or update Markdown files following the existing format
-4. Submit a Pull Request with a clear description of the changes
-
-### Guidelines
-
-- Use clear, concise language aimed at developers
-- Follow the existing frontmatter format (`title`, `description`)
-- Place files in the appropriate product directory
-- Update `_manifest.json` if adding new routes (auto-generated in CI)
-
 ## License
 
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
