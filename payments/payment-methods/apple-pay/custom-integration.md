@@ -61,7 +61,7 @@ The following is a sample API request and response for creating an order:
      -H 'content-type:application/json'
      -d '{
        "amount": 10000,
-       "currency": "",
+       "currency": "INR",
        "receipt": "receipt#1111",
        "partial_payment": false,
        "customer_details": {
@@ -153,7 +153,7 @@ The following is a sample API request and response for creating an order:
        "amount_paid": 0,
        "attempts": 0,
        "created_at": 1737699908,
-       "currency": "",
+       "currency": "INR",
        "entity": "order",
        "id": "order_PnBGZvFBDU81VZ",
        "notes": {
@@ -906,7 +906,7 @@ After creating an order and obtaining the customer's payment details, send the i
 ```js: createPayment with handler function
 var data = {
   amount: 1000,
-  currency: "",
+  currency: "INR",
   email: 'gaurav.kumar@example.com',
   contact: '+919876543210',
   notes: {
@@ -934,7 +934,7 @@ btn.addEventListener('click', function(){
 var data = {
   callback_url: 'https://www.examplecallbackurl.com/',
   amount: 1000,
-  currency: "",
+  currency: "INR",
   email: 'gaurav.kumar@example.com',
   contact: '+919876543210',
   notes: {

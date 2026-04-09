@@ -45,7 +45,7 @@ To test Subscriptions:
         "item": {
           "name": "Test plan",
           "amount": 50000,
-          "currency": "",
+          "currency": "INR",
           "description": "500, charged every 2 months"
         },
         "notes": {
@@ -66,7 +66,7 @@ To test Subscriptions:
         "description": "500, charged every 2 months",
         "amount": 50000,
         "unit_amount": 50000,
-        "currency": "",
+        "currency": "INR",
         "type": "plan",
         "unit": null,
         "tax_inclusive": false,

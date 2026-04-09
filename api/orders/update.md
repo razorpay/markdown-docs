@@ -115,7 +115,7 @@ Order order = client.Order.Fetch(orderId).Edit(orderRequest);
   "amount":2200,
   "amount_paid":0,
   "amount_due":2200,
-  "currency":"",
+  "currency":"INR",
   "receipt":"Receipt #211",
   "offer_id":null,
   "status":"attempted",

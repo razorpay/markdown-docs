@@ -16,7 +16,7 @@ The Refunds entity has the following parameters:
   "id":"rfnd_FgRAHdNOM4ZVbO",
   "entity":"refund",
   "amount":10000,
-  "currency":"",
+  "currency":"INR",
   "payment_id":"pay_FgR9UMzgmKDJRi",
   "notes":{
     "notes_key_1":"Beam me up Scotty.",

@@ -390,7 +390,7 @@ Follow the steps given below:
                      description: 'Great offers',
                      image: 'https://i.imgur.com/3g7nmJC.jpg',
                      order_id: 'order_Cp10EhSaf7wLbS',//Order ID generated in Step 1
-                     currency: '',
+                     currency: 'INR',
                      name: 'Acme Corp',
                      prefill: {
                          email: 'gaurav.kumar@example.com',
@@ -1451,7 +1451,7 @@ If 9977665544 is entered, `+91` is added to it as +919977665544.
        "order_id": "#32697",
        "payment_id": "pay_Rk3b76fSqXXXXX",
        "payment_method": "netbanking",
-       "payment_currency": "",
+       "payment_currency": "INR",
        "total_amount": 659430,
        "total_tax": "543.91",
        "shipping_fee": 700,

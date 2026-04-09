@@ -860,7 +860,7 @@ Order order = client.Order.Create(orderRequest);
          options.put("image", "http://example.com/image/rzp.jpg");
          options.put("order_id", "order_DBJOWzybf0sJbb");//from response of step 3.
          options.put("theme.color", "#3399cc");
-         options.put("currency", "");
+         options.put("currency", "INR");
          options.put("amount", "50000");//pass amount in currency subunits
          options.put("prefill.email", "gaurav.kumar@example.com");
          options.put("prefill.contact","+919876543210");
@@ -891,7 +891,7 @@ Order order = client.Order.Create(orderRequest);
                  //You can omit the image option to fetch the image from the Dashboard
                  options.put("image","http://example.com/image/rzp.jpg")
                  options.put("theme.color", "#3399cc");
-                 options.put("currency","");
+                 options.put("currency","INR");
                  options.put("order_id", "order_DBJOWzybfXXXX");
                  options.put("amount","50000")//pass amount in currency subunits
 

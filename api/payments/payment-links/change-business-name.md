@@ -18,7 +18,7 @@ curl -u [YOUR_KEY_ID]:[YOUR_KEY_SECRET] \
 -H 'Content-type: application/json' \
 -d '{
   "amount": 1000,
-  "currency": "",
+  "currency": "INR",
   "accept_partial": true,
   "first_min_partial_amount": 100,
   "reference_id": "#2234542",
@@ -43,14 +43,14 @@ curl -u [YOUR_KEY_ID]:[YOUR_KEY_SECRET] \
 ```php: PHP
 $api = new Api($key_id, $secret);
 
-$api->paymentLink->create(array('amount'=>500, 'currency'=>'', 'accept_partial'=>true, 'first_min_partial_amount'=>100, 'description' => 'For XYZ purpose', 'customer' => array('name'=>'Gaurav Kumar', 'email' => 'gaurav.kumar@example.com', 'contact'=>'+919876543210'),  'notify'=>array('sms'=>true, 'email'=>true) ,'reminder_enable'=>true , 'options'=>array('checkout'=>array('name'=>'Lacme Corp'))));
+$api->paymentLink->create(array('amount'=>500, 'currency'=>'INR', 'accept_partial'=>true, 'first_min_partial_amount'=>100, 'description' => 'For XYZ purpose', 'customer' => array('name'=>'Gaurav Kumar', 'email' => 'gaurav.kumar@example.com', 'contact'=>'+919876543210'),  'notify'=>array('sms'=>true, 'email'=>true) ,'reminder_enable'=>true , 'options'=>array('checkout'=>array('name'=>'Lacme Corp'))));
 
 ```javascript: Node.js
 var instance = new Razorpay({ key_id: 'YOUR_KEY_ID', key_secret: 'YOUR_SECRET' })
 
 instance.paymentLink.create({
   amount: 1000,
-  currency: "",
+  currency: "INR",
   accept_partial: true,
   first_min_partial_amount: 100,
   reference_id: "#2234542",
@@ -78,7 +78,7 @@ client = razorpay.Client(auth=("YOUR_ID", "YOUR_SECRET"))
 
 client.payment_link.create({
   "amount": 1000,
-  "currency": "",
+  "currency": "INR",
   "accept_partial": true,
   "first_min_partial_amount": 100,
   "reference_id": "#2234542",
@@ -106,7 +106,7 @@ client := razorpay.NewClient("YOUR_KEY_ID", "YOUR_SECRET")
 
 data := map[string]interface{}{
   "amount": 1000,
-  "currency": "",
+  "currency": "INR",
   "accept_partial": true,
   "first_min_partial_amount": 100,
   "reference_id": "#2234542",
@@ -135,7 +135,7 @@ Razorpay.setup('key_id', 'key_secret')
 
 para_attr = {
   "amount": 1000,
-  "currency": "",
+  "currency": "INR",
   "accept_partial": true,
   "first_min_partial_amount": 100,
   "reference_id": "#2234542",
@@ -170,7 +170,7 @@ import com.razorpay.RazorpayException;
 RazorpayClient razorpay = new RazorpayClient("[YOUR_KEY_ID]", "[YOUR_KEY_SECRET]");
 JSONObject paymentLinkRequest = new JSONObject();
 paymentLinkRequest.put("amount",1000);
-paymentLinkRequest.put("currency","");
+paymentLinkRequest.put("currency","INR");
 paymentLinkRequest.put("accept_partial",true);
 paymentLinkRequest.put("reference_id","#aasasw8");
 paymentLinkRequest.put("first_min_partial_amount",100);
@@ -203,7 +203,7 @@ RazorpayClient client = new RazorpayClient("[YOUR_KEY_ID]", "[YOUR_KEY_SECRET]")
 
 Dictionary paymentLinkRequest = new Dictionary();
 paymentLinkRequest.Add("amount", 1000);
-paymentLinkRequest.Add("currency", "");
+paymentLinkRequest.Add("currency", "INR");
 paymentLinkRequest.Add("accept_partial", true);
 paymentLinkRequest.Add("reference_id", "#aasasw8");
 paymentLinkRequest.Add("first_min_partial_amount", 100);
@@ -243,7 +243,7 @@ PaymentLink paymentlink = client.PaymentLink.Create(paymentLinkRequest);
   "callback_url": "",
   "cancelled_at": 0,
   "created_at": 1596187657,
-  "currency": "",
+  "currency": "INR",
   "customer": {
     "contact": "+919876543210",
     "email": "gaurav.kumar@example.com",

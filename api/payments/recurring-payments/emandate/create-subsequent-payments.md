@@ -24,7 +24,7 @@ curl -u [YOUR_KEY_ID]:[YOUR_KEY_SECRET] \
 -H "Content-Type: application/json" \
 -d '{
   "amount":1000,
-  "currency":"",
+  "currency":"INR",
   "payment_capture": true,
   "receipt":"Receipt No. 1",
   "notes": {
@@ -38,7 +38,7 @@ RazorpayClient razorpay = new RazorpayClient("[YOUR_KEY_ID]", "[YOUR_KEY_SECRET]
 
 JSONObject orderRequest = new JSONObject();
 orderRequest.put("amount", 1000);
-orderRequest.put("currency", "");
+orderRequest.put("currency", "INR");
 orderRequest.put("payment_capture", true);
 orderRequest.put("receipt", "Receipt No. 1");
 JSONObject notes = new JSONObject();
@@ -51,14 +51,14 @@ Order order = razorpay.orders.create(orderRequest);
 ```php: PHP
 $api = new Api($key_id, $secret);
 
-$api->order->create(array('receipt' => '123', 'amount' => 100, 'payment_capture' => true, 'currency' => '', 'notes'=> array('key1'=> 'value3','key2'=> 'value2')));
+$api->order->create(array('receipt' => '123', 'amount' => 100, 'payment_capture' => true, 'currency' => 'INR', 'notes'=> array('key1'=> 'value3','key2'=> 'value2')));
 
 ```javascript: Node.js
 var instance = new Razorpay({ key_id: 'YOUR_KEY_ID', key_secret: 'YOUR_SECRET' })
 
 instance.orders.create({
   "amount":1000,
-  "currency":"",
+  "currency":"INR",
   "payment_capture": true,
   "receipt":"Receipt No. 1",
   "notes": {
@@ -72,7 +72,7 @@ client = razorpay.Client(auth=("YOUR_ID", "YOUR_SECRET"))
 
 client.order.create({
     'amount': 1000,
-    'currency': '',
+    'currency': 'INR',
     'payment_capture': True,
     'receipt': 'Receipt No. 1',
     'notes': {'notes_key_1': 'Tea, Earl Grey, Hot',
@@ -85,7 +85,7 @@ Razorpay.setup('YOUR_KEY_ID', 'YOUR_SECRET')
 
 para_attr = {
   "amount": 1000,
-  "currency": "",
+  "currency": "INR",
   "payment_capture": true,
   "receipt": "Receipt No. 1",
   "notes": {
@@ -102,7 +102,7 @@ client := razorpay.NewClient("YOUR_KEY_ID", "YOUR_S ECRET")
 
 data:= map[string]interface{}{
   "amount":1000,
-  "currency":"",
+  "currency":"INR",
   "payment_capture": true,
   "receipt":"Receipt No. 1",
   "notes": map[string]interface{}{
@@ -117,7 +117,7 @@ RazorpayClient client = new RazorpayClient("[YOUR_KEY_ID]", "[YOUR_KEY_SECRET]")
 
 Dictionary orderRequest = new Dictionary();
 orderRequest.Add("amount", 100);
-orderRequest.Add("currency", "");
+orderRequest.Add("currency", "INR");
 orderRequest.Add("receipt", "receipt#12b");
 orderRequest.Add("payment_capture", true);
 Dictionary notes = new Dictionary();
@@ -136,7 +136,7 @@ Order order = client.Order.Create(orderRequest);
    "amount":1000,
    "amount_paid":0,
    "amount_due":1000,
-   "currency":"",
+   "currency":"INR",
    "receipt":"Receipt No. 1",
    "offer_id":null,
    "status":"created",

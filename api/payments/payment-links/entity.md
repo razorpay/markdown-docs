@@ -18,7 +18,7 @@ The Payment Link entity has the following fields:
   "callback_url": "https://example-callback-url.com/",
   "cancelled_at": 1591097270,
   "created_at": 1591097057,
-  "currency": "",
+  "currency": "INR",
   "customer": {
     "contact": "+919876543210",
     "email": "gaurav.kumar@example.com",
@@ -55,7 +55,7 @@ The Payment Link entity has the following fields:
   "amount_paid": 0,
   "cancelled_at": 1591097270,
   "created_at": 1591097057,
-  "currency": "",
+  "currency": "INR",
   "customer": {
     "contact": "+919876543210",
     "email": "gaurav.kumar@example.com",

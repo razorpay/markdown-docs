@@ -868,7 +868,7 @@ Order order = client.Order.Create(orderRequest);
      var options = {
       'key': '',
       'amount': 50000, 
-      'currency': '',
+      'currency': 'INR',
       'name': 'Gaurav Kumar',
       'order_id': 'order_EMBFqjDHEEn80l', // Generate order_id using Orders API
       'description': 'Fine T-Shirt',

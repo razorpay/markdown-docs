@@ -93,7 +93,7 @@ failure.html | Displays payment failure message to user.
 
                   JSONObject orderRequest = new JSONObject();
                   orderRequest.put("amount",50000); // Amount is in currency subunits. 
-                  orderRequest.put("currency","");
+                  orderRequest.put("currency","INR");
                   orderRequest.put("receipt", "receipt#1");
                   JSONObject notes = new JSONObject();
                   notes.put("notes_key_1","Tea, Earl Grey, Hot");
@@ -107,7 +107,7 @@ failure.html | Displays payment failure message to user.
                   "amount": 50000,
                   "amount_paid": 0,
                   "amount_due": 50000,
-                  "currency": "",
+                  "currency": "INR",
                   "receipt": "receipt#1",
                   "offer_id": null,
                   "status": "created",
@@ -222,7 +222,7 @@ Know more about [Orders API](https://raw.githubusercontent.com/razorpay/markdown
                   var options = {
                       "key": "YOUR_KEY_ID", // Enter the Key ID generated from the Dashboard
                       "amount": "50000", // Amount is in currency subunits. 
-                      "currency": "",
+                      "currency": "INR",
                       "name": "Acme Corp",
                       "description": "Test Transaction",
                       "image": "https://example.com/your_logo",
@@ -267,7 +267,7 @@ Know more about [Orders API](https://raw.githubusercontent.com/razorpay/markdown
                   var options = {
                       "key": "YOUR_KEY_ID", // Enter the Key ID generated from the Dashboard
                       "amount": "50000", // Amount is in currency subunits. 
-                      "currency": "",
+                      "currency": "INR",
                       "name": "Acme Corp",
                       "description": "Test Transaction",
                       "image": "https://example.com/your_logo",

@@ -32,7 +32,7 @@ If you are collecting customer consent, ensure that you pass the following param
        });
        var data = {
         amount: 6666,
-        currency: "",
+        currency: "INR",
         email: "gaurav.kumar@example.com",
         order_id: "order_ISsp1ekSCHgoAw",
         contact: +919876543210,
@@ -83,7 +83,7 @@ If you are not collecting customer consent, ensure that you pass the following p
        });
        var data = {
         amount: 6666,
-        currency: "",
+        currency: "INR",
         email: "gaurav.kumar@example.com",
         order_id: "order_ISsp1ekSCHgoAw",
         contact: ,

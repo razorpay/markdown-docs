@@ -71,7 +71,7 @@ curl -X POST https://api.razorpay.com/v1/orders
 -H 'content-type:application/json'
 -d '{
     "amount": 500,
-    "currency": "",
+    "currency": "INR",
     "receipt": "qwsaq1",
     "partial_payment": true,
     "first_payment_min_amount": 230
@@ -81,7 +81,7 @@ RazorpayClient razorpay = new RazorpayClient("[YOUR_KEY_ID]", "[YOUR_KEY_SECRET]
 
   JSONObject orderRequest = new JSONObject();
   orderRequest.put("amount", 50000); // amount in the smallest currency unit
-  orderRequest.put("currency", "");
+  orderRequest.put("currency", "INR");
   orderRequest.put("receipt", "order_rcptid_11");
 
   Order order = razorpay.Orders.create(orderRequest);
@@ -95,7 +95,7 @@ client = razorpay.Client(auth=("YOUR_ID", "YOUR_SECRET"))
 
 DATA = {
     "amount": 100,
-    "currency": "",
+    "currency": "INR",
     "receipt": "receipt#1",
     "notes": {
         "key1": "value3",
@@ -106,27 +106,27 @@ client.order.create(data=DATA)
 ```php: PHP
 $api = new Api($key_id, $secret);
 
-$api->order->create(array('receipt' => '123', 'amount' => 100, 'currency' => '', 'notes'=> array('key1'=> 'value3','key2'=> 'value2')));
+$api->order->create(array('receipt' => '123', 'amount' => 100, 'currency' => 'INR', 'notes'=> array('key1'=> 'value3','key2'=> 'value2')));
 ```csharp: .NET
 RazorpayClient client = new RazorpayClient("[YOUR_KEY_ID]", "[YOUR_KEY_SECRET]");
 
 Dictionary options = new Dictionary();
 options.Add("amount", 50000); // amount in the smallest currency unit
 options.add("receipt", "order_rcptid_11");
-options.add("currency", "");
+options.add("currency", "INR");
 Order order = client.Order.Create(options);
 ```ruby: Ruby
 require "razorpay"
 Razorpay.setup('YOUR_KEY_ID', 'YOUR_SECRET')
 
-options = amount: 50000, currency: '', receipt: ''
+options = amount: 50000, currency: 'INR', receipt: ''
 order = Razorpay::Order.create
 ```javascript: Node.js
 var instance = new Razorpay({ key_id: 'YOUR_KEY_ID', key_secret: 'YOUR_SECRET' })
 
 instance.orders.create({
   amount: 50000,
-  currency: "",
+  currency: "INR",
   receipt: "receipt#1",
   notes: {
     key1: "value3",
@@ -139,7 +139,7 @@ client := razorpay.NewClient("YOUR_KEY_ID", "YOUR_SECRET")
 
 data := map[string]interface{}{
   "amount": 50000,
-  "currency": "",
+  "currency": "INR",
   "receipt": "some_receipt_id"
 }
 body, err := client.Order.Create(data)
@@ -150,7 +150,7 @@ body, err := client.Order.Create(data)
     "amount": 5000,
     "amount_paid": 0,
     "amount_due": 5000,
-    "currency": "",
+    "currency": "INR",
     "receipt": "rcptid_11",
     "offer_id": null,
     "status": "created",

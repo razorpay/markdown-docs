@@ -1,7 +1,7 @@
 {
   "version": "1.0",
-  "generated": "2026-04-08T14:31:38.979Z",
-  "total": 2212,
+  "generated": "2026-04-09T09:06:39.237Z",
+  "total": 2214,
   "base_url": "https://raw.githubusercontent.com/razorpay/markdown-docs/master/",
   "routes": {
     "announcements/gst-changes": {
@@ -8169,6 +8169,18 @@
       "description": "Accept Apple Pay payments from international customers with Razorpay S2S Integration.",
       "category": "payments",
       "url": "https://raw.githubusercontent.com/razorpay/markdown-docs/master/payments/payment-methods/apple-pay/s2s-integration.md"
+    },
+    "payments/payment-methods/apple-pay/web-component-integration": {
+      "title": "Apple Pay Web Component Integration",
+      "description": "Embed Apple Pay directly on your Checkout page using the Razorpay Web Component for a fully customised payment experience.",
+      "category": "payments",
+      "url": "https://raw.githubusercontent.com/razorpay/markdown-docs/master/payments/payment-methods/apple-pay/web-component-integration.md"
+    },
+    "payments/payment-methods/apple-pay/wkwebview-integration": {
+      "title": "Apple Pay WKWebView Integration",
+      "description": "Integrate Apple Pay in iOS WKWebView using the Razorpay Web Component.",
+      "category": "payments",
+      "url": "https://raw.githubusercontent.com/razorpay/markdown-docs/master/payments/payment-methods/apple-pay/wkwebview-integration.md"
     },
     "payments/payment-methods/apps/reward-points/custom-integration": {
       "title": "Pay with Reward Points - Custom Integration",

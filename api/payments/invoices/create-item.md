@@ -19,7 +19,7 @@ curl -u [YOUR_KEY_ID]:[YOUR_KEY_SECRET] \
         "name":"Book / English August",
         "description":"An indian story, Booker prize winner.",
         "amount": 20000,
-        "currency": ""
+        "currency": "INR"
       }'
 
 ```java: Java
@@ -29,7 +29,7 @@ JSONObject itemRequest = new JSONObject();
 itemRequest.put("name","Book / English August");
 itemRequest.put("description","An indian story, Booker prize winner.");
 itemRequest.put("amount", 20000);
-itemRequest.put("currency","");
+itemRequest.put("currency","INR");
 
 Item item = razorpay.items.create(itemRequest);
 
@@ -41,7 +41,7 @@ client.item.create({
   "name": "Book / English August",
   "description": "An indian story, Booker prize winner.",
   "amount": 20000,
-  "currency": ""
+  "currency": "INR"
 })
 
 ```ruby: Ruby
@@ -52,7 +52,7 @@ Razorpay::Item.create({
   "name": "Book / English August",
   "description": "An indian story, Booker prize winner.",
   "amount": 20000,
-  "currency": ""
+  "currency": "INR"
 });
 
 ```go: Go
@@ -63,14 +63,14 @@ data:= map[string]interface{}{
     "name": "Book / English August",
     "description": "An indian story, Booker prize winner.",
     "amount": 20000,
-    "currency": "",
+    "currency": "INR",
 }
 body, err := client.Item.Create(data, nil)
 
   ```php: PHP
 $api = new Api($key_id, $secret);
 
-$api->Item->create(array("name" => "Book / English August","description" => "An indian story, Booker prize winner.","amount" => 20000,"currency" => ""));
+$api->Item->create(array("name" => "Book / English August","description" => "An indian story, Booker prize winner.","amount" => 20000,"currency" => "INR"));
 
 ```javascript: Node.js
 var instance = new Razorpay({ key_id: 'YOUR_KEY_ID', key_secret: 'YOUR_SECRET' })
@@ -79,7 +79,7 @@ instance.Items.create({
   "name": "Book / English August",
   "description": "An indian story, Booker prize winner.",
   "amount": 20000,
-  "currency": ""
+  "currency": "INR"
 })
 
 ```ruby: Ruby
@@ -90,7 +90,7 @@ Razorpay::Item.create({
   "name": "Book / English August",
   "description": "An indian story, Booker prize winner.",
   "amount": 20000,
-  "currency": ""
+  "currency": "INR"
 });
 
 ```csharp: .NET
@@ -100,7 +100,7 @@ Dictionary itemRequest = new Dictionary();
 itemRequest.Add("name", "Book / English August");
 itemRequest.Add("description", "An indian story, Booker prize winner.");
 itemRequest.Add("amount", 20000);
-itemRequest.Add("currency", "");
+itemRequest.Add("currency", "INR");
 
 Item item = client.Item.Create(itemRequest);
 ```
@@ -115,7 +115,7 @@ Item item = client.Item.Create(itemRequest);
   "description": "An indian story, Booker prize winner.",
   "amount": 20000,
   "unit_amount": 20000,
-  "currency": "",
+  "currency": "INR",
   "type": "invoice",
   "unit": null,
   "tax_inclusive": false,

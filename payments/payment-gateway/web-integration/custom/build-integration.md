@@ -51,7 +51,7 @@ curl -X POST https://api.razorpay.com/v1/orders
 -H 'content-type:application/json'
 -d '{
     "amount": 50000,
-    "currency": "",
+    "currency": "INR",
     "receipt": "rcptid_11",
     "partial_payment": true,
     "first_payment_min_amount": 23000
@@ -60,7 +60,7 @@ curl -X POST https://api.razorpay.com/v1/orders
 try {
   JSONObject orderRequest = new JSONObject();
   orderRequest.put("amount", 50000); // amount in the smallest currency unit
-  orderRequest.put("currency", "");
+  orderRequest.put("currency", "INR");
   orderRequest.put("receipt", "order_rcptid_11");
 
   Order order = razorpay.Orders.create(orderRequest);
@@ -74,7 +74,7 @@ client = razorpay.Client(auth=("api_key", "api_secret"))
 
 DATA = {
     "amount": 100,
-    "currency": "",
+    "currency": "INR",
     "receipt": "receipt#1",
     "notes": {
         "key1": "value3",
@@ -86,21 +86,21 @@ client.order.create(data=DATA)
 $order  = $client->order->create([
   'receipt'         => 'order_rcptid_11',
   'amount'          => 50000, // amount in the smallest currency unit
-  'currency'        => ''// [See the list of supported currencies](https://raw.githubusercontent.com/razorpay/markdown-docs/master/payments/international-payments.md#supported-currencies).)
+  'currency'        => 'INR'// [See the list of supported currencies](https://raw.githubusercontent.com/razorpay/markdown-docs/master/payments/international-payments.md#supported-currencies).)
 ]);
 ```csharp: .NET
 Dictionary options = new Dictionary();
 options.Add("amount", 50000); // amount in the smallest currency unit
 options.add("receipt", "order_rcptid_11");
-options.add("currency", "");
+options.add("currency", "INR");
 Order order = client.Order.Create(options);
 ```ruby: Ruby
-options = amount: 50000, currency: '', receipt: ''
+options = amount: 50000, currency: 'INR', receipt: ''
 order = Razorpay::Order.create
 ```javascript: Node.js
 var options = {
   amount: 50000,  // amount in the smallest currency unit
-  currency: "",
+  currency: "INR",
   receipt: "order_rcptid_11"
 };
 instance.orders.create(options, function(err, order) {
@@ -113,7 +113,7 @@ instance.orders.create(options, function(err, order) {
     "amount": 50000,
     "amount_paid": 0,
     "amount_due": 50000,
-    "currency": "",
+    "currency": "INR",
     "receipt": "rcptid_11",
     "status": "created",
     "attempts": 0,
@@ -482,7 +482,7 @@ Know more about [sample codes for various payment methods](https://raw.githubuse
 ```js: createPayment with handler function
 var data = {
   amount: 1000, // in currency subunits. 
-  currency: "",// 
+  currency: "INR",// 
   email: 'gaurav.kumar@example.com',
   contact: '+919876543210',
   notes: {
@@ -513,7 +513,7 @@ btn.addEventListener('click', function(){
 var data = {
   callback_url: 'https://www.examplecallbackurl.com/',
   amount: 1000, // in currency subunits. 
-  currency: "",// 
+  currency: "INR",// 
   email: 'gaurav.kumar@example.com',
   contact: '+919876543210',
   notes: {

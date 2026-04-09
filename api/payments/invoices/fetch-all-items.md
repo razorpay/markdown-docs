@@ -87,7 +87,7 @@ List item = client.Item.All();
       "description": "An indian story, Booker prize winner.",
       "amount": 20000,
       "unit_amount": 20000,
-      "currency": "",
+      "currency": "INR",
       "type": "invoice",
       "unit": null,
       "tax_inclusive": false,

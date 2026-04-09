@@ -16,7 +16,7 @@ The Orders entity has the following parameters:
   "amount": 50000,
   "amount_paid": 0,
   "amount_due": 50000,
-  "currency": "",
+  "currency": "INR",
   "receipt": "Receipt #20",
   "status": "created",
   "attempts": 0,

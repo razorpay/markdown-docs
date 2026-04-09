@@ -45,7 +45,7 @@ let config = {
 let options = {
   key: "[YOUR_KEY_ID]",
   amount: 60000,
-  currency: "",
+  currency: "INR",
 
   config: {
     display: {
@@ -76,7 +76,7 @@ curl -u [YOUR_KEY_ID]:[YOUR_KEY_SECRET]
 -H "content-type: application/json"
 -d '{
   "amount": 50000,
-  "currency": "",
+  "currency": "INR",
   "receipt": "receipt#1",
   "checkout_config_id": "config_Ep0eOCwdSfgkco"
 }'
@@ -86,14 +86,14 @@ client = razorpay.Client(auth=("YOUR_ID", "YOUR_SECRET"))
 
 client.order.create({
   "amount": 50000,
-  "currency": "",
+  "currency": "INR",
   "receipt": "receipt#1",
   "checkout_config_id": "config_Ep0eOCwdSfgkco"
  })
 ```php: PHP
 $api = new Api($key_id, $secret);
 
-$api->order->create(array('receipt' => 'receipt#1', 'amount' => 50000, 'currency' => '', 'checkout_config_id' => 'config_Ep0eOCwdSfgkco'));
+$api->order->create(array('receipt' => 'receipt#1', 'amount' => 50000, 'currency' => 'INR', 'checkout_config_id' => 'config_Ep0eOCwdSfgkco'));
 
 ```csharp: .NET
 RazorpayClient client = new RazorpayClient("[YOUR_KEY_ID]", "[YOUR_KEY_SECRET]");
@@ -101,7 +101,7 @@ RazorpayClient client = new RazorpayClient("[YOUR_KEY_ID]", "[YOUR_KEY_SECRET]")
 Dictionary options = new Dictionary();
 options.Add("amount", 50000); // amount in the smallest currency unit
 options.Add("receipt", "receipt#1");
-options.Add("currency", "");
+options.Add("currency", "INR");
 options.Add("checkout_config_id", "config_Ep0eOCwdSfgkco");
 Order order = client.Order.Create(options);
 
@@ -110,7 +110,7 @@ var instance = new Razorpay({ key_id: 'YOUR_KEY_ID', key_secret: 'YOUR_SECRET' }
 
 instance.orders.create({
   amount: 50000,
-  currency: "",
+  currency: "INR",
   receipt: "receipt#1",
   checkout_config_id: "config_Ep0eOCwdSfgkco"
 })
@@ -121,7 +121,7 @@ client := razorpay.NewClient("YOUR_KEY_ID", "YOUR_SECRET")
 
 data := map[string]interface{}{
   "amount": 50000,
-  "currency": "",
+  "currency": "INR",
   "receipt": "receipt#1",
   "checkout_config_id": "config_Ep0eOCwdSfgkco"
 }
@@ -131,14 +131,14 @@ body, err := client.Order.Create(data, nil)
 require "razorpay"
 Razorpay.setup('YOUR_KEY_ID', 'YOUR_SECRET')
 
-order = Razorpay::Order.create amount: 50000, currency: '', receipt: 'receipt#1', checkout_config_id: 'config_Ep0eOCwdSfgkco'
+order = Razorpay::Order.create amount: 50000, currency: 'INR', receipt: 'receipt#1', checkout_config_id: 'config_Ep0eOCwdSfgkco'
 
 ```java: Java
 RazorpayClient razorpay = new RazorpayClient("[YOUR_KEY_ID]", "[YOUR_KEY_SECRET]");
 
 JSONObject orderRequest = new JSONObject();
 orderRequest.put("amount", 50000); // amount in the smallest currency unit
-orderRequest.put("currency", "");
+orderRequest.put("currency", "INR");
 orderRequest.put("receipt", "receipt#1");
 orderRequest.put("checkout_config_id", "config_Ep0eOCwdSfgkco");
 
@@ -151,7 +151,7 @@ Order order = razorpay.orders.create(orderRequest);
   "amount": 50000,
   "amount_paid": 0,
   "amount_due": 50000,
-  "currency": "",
+  "currency": "INR",
   "receipt": "receipt#1",
   "offer_id": null,
   "status": "created",

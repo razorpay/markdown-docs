@@ -74,7 +74,7 @@ Plan plan = client.Plan.Fetch(planId);
     "description":"Description for the test plan - Weekly",
     "amount":69900,
     "unit_amount":69900,
-    "currency":"",
+    "currency":"INR",
     "type":"plan",
     "unit":null,
     "tax_inclusive":false,

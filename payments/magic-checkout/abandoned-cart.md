@@ -40,7 +40,7 @@ Given below is a sample payload:
     "email": "gaurav.kumar@example.com",
     "phone": "+919999999999",
     "abandoned_checkout_url": "https://magic-checkout-test-store-url",
-    "currency": "",
+    "currency": "INR",
     "line_items": [
         {
         "image_url": "https://image_url",

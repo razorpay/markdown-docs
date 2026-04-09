@@ -46,7 +46,7 @@ curl -X POST https://api.razorpay.com/v1/subscriptions \
       "item":{
         "name":"Delivery charges",
         "amount":30000,
-        "currency":""
+        "currency":"INR"
       }
     }
   ],

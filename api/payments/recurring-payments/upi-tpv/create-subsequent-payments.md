@@ -244,7 +244,7 @@ curl -u [YOUR_KEY_ID]:[YOUR_KEY_SECRET] \
   "email": "gaurav.kumar@example.com",
   "contact": "+919876543210",
   "amount": 1000,
-  "currency": "",
+  "currency": "INR",
   "order_id": "order_1Aa00000000002",
   "customer_id": "cust_1Aa00000000001",
   "token": "token_1Aa00000000001",
@@ -263,7 +263,7 @@ JSONObject paymentRequest = new JSONObject();
 paymentRequest.put("email", "gaurav.kumar@example.com");
 paymentRequest.put("contact", "+919876543210");
 paymentRequest.put("amount", 1000);
-paymentRequest.put("currency", "");
+paymentRequest.put("currency", "INR");
 paymentRequest.put("order_id", "order_1Aa00000000002");
 paymentRequest.put("customer_id", "cust_1Aa00000000001");
 paymentRequest.put("token", "token_1Aa00000000001");
@@ -278,7 +278,7 @@ Payment payment = razorpay.payments.createRecurringPayment(paymentRequest);
 ```php: PHP
 $api = new Api($key_id, $secret);
 
-$api->payment->createRecurring(array('email'=>'gaurav.kumar@example.com','contact'=>'+919876543210','amount'=>100,'currency'=>'','order_id'=>'order_1Aa00000000002','customer_id'=>'cust_1Aa00000000001','token'=>'token_1Aa00000000001','recurring'=>true,'description'=>'Creating recurring payment for Gaurav Kumar'));
+$api->payment->createRecurring(array('email'=>'gaurav.kumar@example.com','contact'=>'+919876543210','amount'=>100,'currency'=>'INR','order_id'=>'order_1Aa00000000002','customer_id'=>'cust_1Aa00000000001','token'=>'token_1Aa00000000001','recurring'=>true,'description'=>'Creating recurring payment for Gaurav Kumar'));
 
 ```javascript: Node.js
 var instance = new Razorpay({ key_id: 'YOUR_KEY_ID', key_secret: 'YOUR_SECRET' })
@@ -287,7 +287,7 @@ instance.payments.createRecurringPayment({
   "email": "gaurav.kumar@example.com",
   "contact": "+919876543210",
   "amount": 1000,
-  "currency": "",
+  "currency": "INR",
   "order_id": "order_1Aa00000000002",
   "customer_id": "cust_1Aa00000000001",
   "token": "token_1Aa00000000001",
@@ -306,7 +306,7 @@ client.payment.createRecurring({
     'email': 'gaurav.kumar@example.com',
     'contact': +919876543210,
     'amount': 1000,
-    'currency': '',
+    'currency': 'INR',
     'order_id': "order_1Aa00000000002",
     'customer_id': "cust_1Aa00000000001",
     'token': 'token_1Aa00000000001',
@@ -324,7 +324,7 @@ para_attr = {
   "email": "gaurav.kumar@example.com",
   "contact": "+919876543210",
   "amount": 1000,
-  "currency": "",
+  "currency": "INR",
   "order_id": "order_1Aa00000000002",
   "customer_id": "cust_1Aa00000000001",
   "token": "token_1Aa00000000001",
@@ -345,7 +345,7 @@ data:= map[string]interface{}{
   "email": "gaurav.kumar@example.com",
   "contact": "+919876543210",
   "amount": 1000,
-  "currency": "",
+  "currency": "INR",
   "order_id": "order_1Aa00000000002",
   "customer_id": "cust_1Aa00000000001",
   "token": "token_1Aa00000000001",
@@ -365,7 +365,7 @@ Dictionary paymentRequest = new Dictionary();
 paymentRequest.Add("email", "gaurav.kumar@example.com");
 paymentRequest.Add("contact", "+919876543210");
 paymentRequest.Add("amount", 1000);
-paymentRequest.Add("currency", "");
+paymentRequest.Add("currency", "INR");
 paymentRequest.Add("order_id", "order_MZ35KPxZaqxfXq");
 paymentRequest.Add("customer_id", "cust_KUyah9o60OPhfj");
 paymentRequest.Add("token", "token_MZ37MsnhLNH4tN");

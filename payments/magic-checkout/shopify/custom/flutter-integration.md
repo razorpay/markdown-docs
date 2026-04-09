@@ -403,7 +403,7 @@ Follow the steps given below:
      var options = {
       'key': '',
       'amount': 50000, 
-      'currency': '',
+      'currency': 'INR',
       'name': 'Gaurav Kumar',
       'order_id': 'order_EMBFqjDHEEn80l', // Generate order_id using Orders API
       'description': 'Fine T-Shirt',
@@ -1449,7 +1449,7 @@ If 9977665544 is entered, `+91` is added to it as +919977665544.
        "order_id": "#32697",
        "payment_id": "pay_Rk3b76fSqXXXXX",
        "payment_method": "netbanking",
-       "payment_currency": "",
+       "payment_currency": "INR",
        "total_amount": 659430,
        "total_tax": "543.91",
        "shipping_fee": 700,

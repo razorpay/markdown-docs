@@ -868,7 +868,7 @@ Order order = client.Order.Create(orderRequest);
                      description: 'Great offers',
                      image: 'https://i.imgur.com/3g7nmJC.jpg',
                      order_id: 'order_Cp10EhSaf7wLbS',//Order ID generated in Step 1
-                     currency: '',
+                     currency: 'INR',
                      name: 'Acme Corp',
                      prefill: {
                          email: 'gaurav.kumar@example.com',

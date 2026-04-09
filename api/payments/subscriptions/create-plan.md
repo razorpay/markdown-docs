@@ -21,7 +21,7 @@ curl -u [YOUR_KEY_ID]:[YOUR_KEY_SECRET] \
   "item": {
     "name": "Test plan - Weekly",
     "amount": 69900,
-    "currency": "",
+    "currency": "INR",
     "description": "Description for the test plan"
   },
   "notes": {
@@ -39,7 +39,7 @@ planRequest.put("interval",1);
 JSONObject item = new JSONObject();
 item.put("name","Test plan - Weekly");
 item.put("amount",69900);
-item.put("currency","");
+item.put("currency","INR");
 item.put("description","Description for the test plan");
 planRequest.put("item",item);
 JSONObject notes = new JSONObject();
@@ -52,7 +52,7 @@ Plan plan = razorpay.plans.create(planRequest);
 ```php: PHP
 $api = new Api($key_id, $secret);
 
-$api->plan->create(array('period' => 'weekly', 'interval' => 1, 'item' => array('name' => 'Test Weekly 1 plan', 'description' => 'Description for the weekly 1 plan', 'amount' => 600, 'currency' => ''),'notes'=> array('key1'=> 'value3','key2'=> 'value2')));
+$api->plan->create(array('period' => 'weekly', 'interval' => 1, 'item' => array('name' => 'Test Weekly 1 plan', 'description' => 'Description for the weekly 1 plan', 'amount' => 600, 'currency' => 'INR'),'notes'=> array('key1'=> 'value3','key2'=> 'value2')));
 
 ```javascript: Node.js
 var instance = new Razorpay({ key_id: 'YOUR_KEY_ID', key_secret: 'YOUR_SECRET' })
@@ -63,7 +63,7 @@ instance.plans.create({
   item: {
     name: "Test plan - Weekly",
     amount: 69900,
-    currency: "",
+    currency: "INR",
     description: "Description for the test plan"
   },
   notes: {
@@ -81,7 +81,7 @@ client.plan.create({
     'item': {
         'name': 'Test plan - Weekly',
         'amount': 69900,
-        'currency': '',
+        'currency': 'INR',
         'description': 'Description for the test plan',
         },
     'notes': {'notes_key_1': 'Tea, Earl Grey, Hot',
@@ -98,7 +98,7 @@ para_attr = {
   "item": {
     "name": "Test plan - Weekly",
     "amount": 69900,
-    "currency": "",
+    "currency": "INR",
     "description": "Description for the test plan"
   },
   "notes": {
@@ -119,7 +119,7 @@ data:= map[string]interface{}{
   "item": map[string]interface{}{
     "name": "Test plan - Weekly",
     "amount": 69900,
-    "currency": "",
+    "currency": "INR",
     "description": "Description for the test plan",
   },
   "notes": map[string]interface{}{
@@ -138,7 +138,7 @@ planRequest.Add("interval", 1);
 Dictionary item = new Dictionary();
 item.Add("name", "Test plan - Weekly");
 item.Add("amount", 69900);
-item.Add("currency", "");
+item.Add("currency", "INR");
 item.Add("description", "Description for the test plan");
 planRequest.Add("item", item);
 Dictionary notes = new Dictionary();
@@ -164,7 +164,7 @@ Plan plan = client.Plan.Create(planRequest);
     "description":"Description for the test plan - Weekly",
     "amount":69900,
     "unit_amount":69900,
-    "currency":"",
+    "currency":"INR",
     "type":"plan",
     "unit":null,
     "tax_inclusive":false,

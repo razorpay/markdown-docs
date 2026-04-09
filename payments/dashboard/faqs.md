@@ -61,7 +61,25 @@ description: Find answers to frequently asked questions about Razorpay Dashboard
     
 
   
-### 3. How can I update my bank account information?
+### 3. Can I change my business type on the Razorpay?
+
+      Yes, changing your business type on Razorpay is allowed under certain conditions. The key requirement is that the PAN associated with the Merchant id (MID), will remain the same before and after the change. For example, moving from `Individual` to `Sole Proprietorship` is permitted since the PAN does not change in such cases. Similarly, changes like `Private Limited` to `Public Limited` may also be supported.
+
+      Currently, this is a manual, offline process. To request a business type change, you must contact [support team](https://razorpay.com/support/) with the relevant details and documents.
+    
+
+  
+### 4. What documents are required to change my business type on Razorpay?
+
+    To change your business type, you must submit documents that support your new business entity and validate the reason for the change. While the exact documents may vary based on the type of change requested, you should typically be prepared to provide:
+    - Proof of your new business entity. See [list of KYC documents](https://raw.githubusercontent.com/razorpay/markdown-docs/master/payments/business-types-kyc-documents.md#kyc-documents).
+    - PAN card: To confirm that the PAN remains the same across the entity change.
+    - Reason for the change. For example, updating GST details or aligning your account with current business filings and compliance requirements.
+    Since each request is handled manually, additional documents may be requested during the review process. Contact [support team](https://razorpay.com/support/) to initiate your request.
+    
+
+  
+### 5. How can I update my bank account information?
 
      You can request a change in bank account details from the Dashboard. Watch the video explaining [how to change bank account details](https://raw.githubusercontent.com/razorpay/markdown-docs/master/payments/dashboard/account-settings/bank-account-details.md).
      1. Log in to the Dashboard.

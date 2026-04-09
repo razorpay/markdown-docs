@@ -33,7 +33,7 @@ curl -u [YOUR_KEY_ID]:[YOUR_KEY_SECRET] \
 -H "Content-Type: application/json" \
 -d '{
   "amount": 10000,
-  "currency": "",
+  "currency": "INR",
   "receipt": "receipt#1",
   "customer_id": "cust_OwZZseNBf9Uqsi",
   "customer_details": {

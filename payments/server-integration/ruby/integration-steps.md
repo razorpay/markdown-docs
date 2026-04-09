@@ -81,7 +81,7 @@ File Name | Purpose
                   require "razorpay"
                   Razorpay.setup('YOUR_KEY_ID', 'YOUR_SECRET')
 
-                  order = Razorpay::Order.create amount: 50000, currency: '', receipt: 'TEST' // Amount is in currency subunits. 
+                  order = Razorpay::Order.create amount: 50000, currency: 'INR', receipt: 'TEST' // Amount is in currency subunits. 
 
                   ```json: Response
                   {
@@ -90,7 +90,7 @@ File Name | Purpose
                   "amount": 50000,
                   "amount_paid": 0,
                   "amount_due": 50000,
-                  "currency": "",
+                  "currency": "INR",
                   "receipt": "TEST",
                   "offer_id": null,
                   "status": "created",
@@ -205,7 +205,7 @@ Know more about [Orders API](https://raw.githubusercontent.com/razorpay/markdown
                   var options = {
                       "key": "YOUR_KEY_ID", // Enter the Key ID generated from the Dashboard
                       "amount": "50000", // Amount is in currency subunits. 
-                      "currency": "",
+                      "currency": "INR",
                       "name": "Acme Corp",
                       "description": "Test Transaction",
                       "image": "https://example.com/your_logo",
@@ -249,7 +249,7 @@ Know more about [Orders API](https://raw.githubusercontent.com/razorpay/markdown
                   var options = {
                       "key": "YOUR_KEY_ID", // Enter the Key ID generated from the Dashboard
                       "amount": "50000", // Amount is in currency subunits. 
-                      "currency": "",
+                      "currency": "INR",
                       "name": "Acme Corp",
                       "description": "Test Transaction",
                       "image": "https://example.com/your_logo",

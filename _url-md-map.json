@@ -1323,6 +1323,8 @@
   "/docs/payments/payment-methods/apple-pay": "https://raw.githubusercontent.com/razorpay/markdown-docs/master/payments/payment-methods/apple-pay.md",
   "/docs/payments/payment-methods/apple-pay/custom-integration": "https://raw.githubusercontent.com/razorpay/markdown-docs/master/payments/payment-methods/apple-pay/custom-integration.md",
   "/docs/payments/payment-methods/apple-pay/s2s-integration": "https://raw.githubusercontent.com/razorpay/markdown-docs/master/payments/payment-methods/apple-pay/s2s-integration.md",
+  "/docs/payments/payment-methods/apple-pay/web-component-integration": "https://raw.githubusercontent.com/razorpay/markdown-docs/master/payments/payment-methods/apple-pay/web-component-integration.md",
+  "/docs/payments/payment-methods/apple-pay/wkwebview-integration": "https://raw.githubusercontent.com/razorpay/markdown-docs/master/payments/payment-methods/apple-pay/wkwebview-integration.md",
   "/docs/payments/payment-methods/apps/reward-points/faqs": "https://raw.githubusercontent.com/razorpay/markdown-docs/master/payments/payment-methods/apps/reward-points/faqs.md",
   "/docs/payments/payment-methods/bank-transfer": "https://raw.githubusercontent.com/razorpay/markdown-docs/master/payments/payment-methods/bank-transfer.md",
   "/docs/payments/payment-methods/bank-transfer/": "https://raw.githubusercontent.com/razorpay/markdown-docs/master/payments/payment-methods/bank-transfer.md",

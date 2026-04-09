@@ -2048,7 +2048,7 @@ If no value is passed, the refund is processed using the [default speed set on t
      -H "content-type: application/json" \
      -d '{
        "amount": 50000,
-       "currency": "",
+       "currency": "INR",
        "receipt": "receipt#1",
        "notes": {
          "key1": "value3",
@@ -2418,7 +2418,7 @@ If no value is passed, the refund is processed using the [default speed set on t
       "id": "order_EKwxwAgItmmXdp",
       "payment": {
         "amount": 100,
-        "currency": "",
+        "currency": "INR",
         "method": "card",
         "card": {
           "number": "4628 9499 7226 2986",
@@ -2441,7 +2441,7 @@ If no value is passed, the refund is processed using the [default speed set on t
      -H "Content-Type: application/json" \
      -d{
       "amount": 50000,
-      "currency": "",
+      "currency": "INR",
       "receipt": "receipt#1",
       "payment": {
         "method": "card",
@@ -2486,7 +2486,7 @@ If no value is passed, the refund is processed using the [default speed set on t
       "amount": 50000,
       "amount_paid": 0,
       "amount_due": 50000,
-      "currency": "",
+      "currency": "INR",
       "offer_id": null,
       "attempts": 1,
       "transfers": [],

@@ -27,7 +27,7 @@ curl -u [YOUR_KEY_ID]:[YOUR_KEY_SECRET] \
     "item": {
       "name": "Delivery charges",
       "amount": 30000,
-      "currency": ""
+      "currency": "INR"
       }
     }
   ],
@@ -56,7 +56,7 @@ Dictionary linesItem = new Dictionary();
 Dictionary item = new Dictionary();
 item.Add("name", "Delivery charges");
 item.Add("amount", 30000);
-item.Add("currency", "");
+item.Add("currency", "INR");
 linesItem.Add("item", item);
 addons.Add(linesItem);
 subscriptionRequest.Add("addons", addons);
@@ -87,7 +87,7 @@ JSONObject linesItem = new JSONObject();
 JSONObject item = new JSONObject();
 item.put("name","Delivery charges");
 item.put("amount",30000);
-item.put("currency","");
+item.put("currency","INR");
 linesItem.put("item",item);
 addons.add(linesItem);
 subscriptionRequest.put("addons",addons);
@@ -106,7 +106,7 @@ Subscription subscription = razorpay.subscriptions.create(subscriptionRequest);
 ```php: PHP
 $api = new Api($key_id, $secret);
 
-$api->subscription->create(array('plan_id' => 'plan_HoYg68p5kmuvzD','total_count' => 12,'quantity' => 1,'expire_by' => 1633237807,'customer_notify' => true, 'addons' => array(array('item'=>array('name' => 'Delivery charges','amount' => 30000,'currency' => ''))),'notes'=>array('notes_key_1'=>'Tea, Earl Grey, Hot','notes_key_2'=>'Tea, Earl Grey… decaf.'),'notify_info'=>array('notify_phone' => '+919876543210','notify_email'=> 'gaurav.kumar@example.com')));
+$api->subscription->create(array('plan_id' => 'plan_HoYg68p5kmuvzD','total_count' => 12,'quantity' => 1,'expire_by' => 1633237807,'customer_notify' => true, 'addons' => array(array('item'=>array('name' => 'Delivery charges','amount' => 30000,'currency' => 'INR'))),'notes'=>array('notes_key_1'=>'Tea, Earl Grey, Hot','notes_key_2'=>'Tea, Earl Grey… decaf.'),'notify_info'=>array('notify_phone' => '+919876543210','notify_email'=> 'gaurav.kumar@example.com')));
 
 ```javascript: Node.js
 var instance = new Razorpay({ key_id: 'YOUR_KEY_ID', key_secret: 'YOUR_SECRET' })
@@ -122,7 +122,7 @@ instance.subscriptions.create({
       item: {
         name: "Delivery charges",
         amount: 30000,
-        currency: ""
+        currency: "INR"
       }
     }
   ],
@@ -147,7 +147,7 @@ client.subscription.create({
     'expire_by': 1633237807,
     'customer_notify': True,
     'addons': [{'item': {'name': 'Delivery charges', 'amount': 30000,
-               'currency': ''}}],
+               'currency': 'INR'}}],
     'notes': {'notes_key_1': 'Tea, Earl Grey, Hot',
               'notes_key_2': 'Tea, Earl Grey\xe2\x80\xa6 decaf.'},
     'notify_info': {'notify_phone': '+919876543210',
@@ -169,7 +169,7 @@ para_attr = {
       "item": {
         "name": "Delivery charges",
         "amount": 30000,
-        "currency": ""
+        "currency": "INR"
       }
     }
   ],
@@ -201,7 +201,7 @@ data := map[string]interface{}{
     "item": map[string]interface{}{
       "name": "Delivery charges",
       "amount": 30000,
-      "currency": "",
+      "currency": "INR",
       },
     },
   },

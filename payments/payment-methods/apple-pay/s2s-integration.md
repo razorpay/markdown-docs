@@ -145,7 +145,7 @@ This step demonstrates how to create an Order and process a Payment using Razorp
      -H 'content-type:application/json'
      -d '{
        "amount": 50000,
-       "currency": "",
+       "currency": "INR",
        "receipt": "receipt#1111",
        "partial_payment": false,
        "customer_details": {
@@ -263,7 +263,7 @@ This step demonstrates how to create an Order and process a Payment using Razorp
        "amount_paid": 0,
        "attempts": 9,
        "created_at": 1706507580,
-       "currency": "",
+       "currency": "INR",
        "entity": "order",
        "id": "order_NUJs9C1Luflzts",
        "notes": {
@@ -717,7 +717,7 @@ If no value is passed, the refund is processed using the [default speed set on t
      -H 'content-type:application/json'
      -d '{
        "amount": 10000,
-       "currency": "",
+       "currency": "INR",
        "receipt": "receipt#1111",
        "partial_payment": false,
        "customer_details": {
@@ -809,7 +809,7 @@ If no value is passed, the refund is processed using the [default speed set on t
        "amount_paid": 0,
        "attempts": 0,
        "created_at": 1737699908,
-       "currency": "",
+       "currency": "INR",
        "entity": "order",
        "id": "order_PnBGZvFBDU81VZ",
        "notes": {
@@ -1159,7 +1159,7 @@ https://api.razorpay.com/v1/payments/create/json \
 -H "Content-Type: application/json" \
 -d '{
   "amount": 10000,
-  "currency": "",
+  "currency": "INR",
   "contact": "+919876543210",
   "email": "gaurav.kumar@example.com",
   "order_id": "order_PrcuyJDT7uSwaf",

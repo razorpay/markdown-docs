@@ -76,7 +76,7 @@ curl -u [YOUR_KEY_ID]:[YOUR_KEY_SECRET] \
   "item": {
     "name": "Test plan - Weekly",
     "amount": 69900,
-    "currency": "",
+    "currency": "INR",
     "description": "Description for the test plan"
   },
   "notes": {
@@ -94,7 +94,7 @@ planRequest.put("interval",1);
 JSONObject item = new JSONObject();
 item.put("name","Test plan - Weekly");
 item.put("amount",69900);
-item.put("currency","");
+item.put("currency","INR");
 item.put("description","Description for the test plan");
 planRequest.put("item",item);
 JSONObject notes = new JSONObject();
@@ -107,7 +107,7 @@ Plan plan = razorpay.plans.create(planRequest);
 ```php: PHP
 $api = new Api($key_id, $secret);
 
-$api->plan->create(array('period' => 'weekly', 'interval' => 1, 'item' => array('name' => 'Test Weekly 1 plan', 'description' => 'Description for the weekly 1 plan', 'amount' => 600, 'currency' => ''),'notes'=> array('key1'=> 'value3','key2'=> 'value2')));
+$api->plan->create(array('period' => 'weekly', 'interval' => 1, 'item' => array('name' => 'Test Weekly 1 plan', 'description' => 'Description for the weekly 1 plan', 'amount' => 600, 'currency' => 'INR'),'notes'=> array('key1'=> 'value3','key2'=> 'value2')));
 
 ```javascript: Node.js
 var instance = new Razorpay({ key_id: 'YOUR_KEY_ID', key_secret: 'YOUR_SECRET' })
@@ -118,7 +118,7 @@ instance.plans.create({
   item: {
     name: "Test plan - Weekly",
     amount: 69900,
-    currency: "",
+    currency: "INR",
     description: "Description for the test plan"
   },
   notes: {
@@ -136,7 +136,7 @@ client.plan.create({
     'item': {
         'name': 'Test plan - Weekly',
         'amount': 69900,
-        'currency': '',
+        'currency': 'INR',
         'description': 'Description for the test plan',
         },
     'notes': {'notes_key_1': 'Tea, Earl Grey, Hot',
@@ -153,7 +153,7 @@ para_attr = {
   "item": {
     "name": "Test plan - Weekly",
     "amount": 69900,
-    "currency": "",
+    "currency": "INR",
     "description": "Description for the test plan"
   },
   "notes": {
@@ -174,7 +174,7 @@ data:= map[string]interface{}{
   "item": map[string]interface{}{
     "name": "Test plan - Weekly",
     "amount": 69900,
-    "currency": "",
+    "currency": "INR",
     "description": "Description for the test plan",
   },
   "notes": map[string]interface{}{
@@ -193,7 +193,7 @@ planRequest.Add("interval", 1);
 Dictionary item = new Dictionary();
 item.Add("name", "Test plan - Weekly");
 item.Add("amount", 69900);
-item.Add("currency", "");
+item.Add("currency", "INR");
 item.Add("description", "Description for the test plan");
 planRequest.Add("item", item);
 Dictionary notes = new Dictionary();
@@ -217,7 +217,7 @@ Plan plan = client.Plan.Create(planRequest);
     "description":"Description for the test plan - Weekly",
     "amount":69900,
     "unit_amount":69900,
-    "currency":"",
+    "currency":"INR",
     "type":"plan",
     "unit":null,
     "tax_inclusive":false,
@@ -442,7 +442,7 @@ curl -u [YOUR_KEY_ID]:[YOUR_KEY_SECRET] \
          "item":{
             "name":"Delivery charges",
             "amount":3000,
-            "currency":""
+            "currency":"INR"
          }
       }
    ],
@@ -466,7 +466,7 @@ Dictionary linesItem = new Dictionary();
 Dictionary item = new Dictionary();
 item.Add("name", "Delivery charges");
 item.Add("amount", 30000);
-item.Add("currency", "");
+item.Add("currency", "INR");
 linesItem.Add("item", item);
 object[] addons = new object[]{ linesItem };
 subscriptionRequest.Add("addons", addons);
@@ -492,7 +492,7 @@ JSONObject linesItem = new JSONObject();
 JSONObject item = new JSONObject();
 item.put("name","Delivery charges");
 item.put("amount",30000);
-item.put("currency","");
+item.put("currency","INR");
 linesItem.put("item",item);
 addons.add(linesItem);
 subscriptionRequest.put("addons",addons);
@@ -507,7 +507,7 @@ Subscription order = razorpay.subscriptions.create(subscriptionRequest);
 ```php: PHP
 $api = new Api($key_id, $secret);
 
-$api->subscription->create(array('plan_id' => 'plan_7wAosPWtrkhqZw', 'customer_notify' => true,'quantity'=>5, 'total_count' => 6, 'start_at' => 1773461489, 'addons' => array(array('item' => array('name' => 'Delivery charges', 'amount' => 30000, 'currency' => ''))),'notes'=> array('key1'=> 'value3','key2'=> 'value2')));
+$api->subscription->create(array('plan_id' => 'plan_7wAosPWtrkhqZw', 'customer_notify' => true,'quantity'=>5, 'total_count' => 6, 'start_at' => 1773461489, 'addons' => array(array('item' => array('name' => 'Delivery charges', 'amount' => 30000, 'currency' => 'INR'))),'notes'=> array('key1'=> 'value3','key2'=> 'value2')));
 
 ```javascript: Node.js
 var instance = new Razorpay({ key_id: 'YOUR_KEY_ID', key_secret: 'YOUR_SECRET' })
@@ -523,7 +523,7 @@ instance.subscriptions.create({
       item: {
         name: "Delivery charges",
         amount: 30000,
-        currency: ""
+        currency: "INR"
       }
     }
   ],
@@ -544,7 +544,7 @@ client.subscription.create({
     'total_count': 6,
     'start_at': 1773461489,
     'addons': [{'item': {'name': 'Delivery charges', 'amount': 30000,
-               'currency': ''}}],
+               'currency': 'INR'}}],
     'notes': {'key1': 'value3', 'key2': 'value2'}
     })
 
@@ -563,7 +563,7 @@ para_attr = {
       "item": {
         "name": "Delivery charges",
         "amount": 30000,
-        "currency": ""
+        "currency": "INR"
       }
     }
   ],
@@ -591,7 +591,7 @@ data := map[string]interface{}{
       "item":map[string]interface{}{
         "name":"Delivery charges",
         "amount":3000,
-        "currency":"",
+        "currency":"INR",
       },
     },
   },
@@ -762,7 +762,7 @@ curl -u [YOUR_KEY_ID]:[YOUR_KEY_SECRET] \
     "item": {
       "name": "Delivery charges",
       "amount": 30000,
-      "currency": ""
+      "currency": "INR"
       }
     }
   ],
@@ -791,7 +791,7 @@ Dictionary linesItem = new Dictionary();
 Dictionary item = new Dictionary();
 item.Add("name", "Delivery charges");
 item.Add("amount", 30000);
-item.Add("currency", "");
+item.Add("currency", "INR");
 linesItem.Add("item", item);
 addons.Add(linesItem);
 subscriptionRequest.Add("addons", addons);
@@ -822,7 +822,7 @@ JSONObject linesItem = new JSONObject();
 JSONObject item = new JSONObject();
 item.put("name","Delivery charges");
 item.put("amount",30000);
-item.put("currency","");
+item.put("currency","INR");
 linesItem.put("item",item);
 addons.add(linesItem);
 subscriptionRequest.put("addons",addons);
@@ -841,7 +841,7 @@ Subscription subscription = razorpay.subscriptions.create(subscriptionRequest);
 ```php: PHP
 $api = new Api($key_id, $secret);
 
-$api->subscription->create(array('plan_id' => 'plan_HoYg68p5kmuvzD','total_count' => 12,'quantity' => 1,'expire_by' => 1633237807,'customer_notify' => true, 'addons' => array(array('item'=>array('name' => 'Delivery charges','amount' => 30000,'currency' => ''))),'notes'=>array('notes_key_1'=>'Tea, Earl Grey, Hot','notes_key_2'=>'Tea, Earl Grey… decaf.'),'notify_info'=>array('notify_phone' => '+919876543210','notify_email'=> 'gaurav.kumar@example.com')));
+$api->subscription->create(array('plan_id' => 'plan_HoYg68p5kmuvzD','total_count' => 12,'quantity' => 1,'expire_by' => 1633237807,'customer_notify' => true, 'addons' => array(array('item'=>array('name' => 'Delivery charges','amount' => 30000,'currency' => 'INR'))),'notes'=>array('notes_key_1'=>'Tea, Earl Grey, Hot','notes_key_2'=>'Tea, Earl Grey… decaf.'),'notify_info'=>array('notify_phone' => '+919876543210','notify_email'=> 'gaurav.kumar@example.com')));
 
 ```javascript: Node.js
 var instance = new Razorpay({ key_id: 'YOUR_KEY_ID', key_secret: 'YOUR_SECRET' })
@@ -857,7 +857,7 @@ instance.subscriptions.create({
       item: {
         name: "Delivery charges",
         amount: 30000,
-        currency: ""
+        currency: "INR"
       }
     }
   ],
@@ -882,7 +882,7 @@ client.subscription.create({
     'expire_by': 1633237807,
     'customer_notify': True,
     'addons': [{'item': {'name': 'Delivery charges', 'amount': 30000,
-               'currency': ''}}],
+               'currency': 'INR'}}],
     'notes': {'notes_key_1': 'Tea, Earl Grey, Hot',
               'notes_key_2': 'Tea, Earl Grey\xe2\x80\xa6 decaf.'},
     'notify_info': {'notify_phone': '+919876543210',
@@ -904,7 +904,7 @@ para_attr = {
       "item": {
         "name": "Delivery charges",
         "amount": 30000,
-        "currency": ""
+        "currency": "INR"
       }
     }
   ],
@@ -936,7 +936,7 @@ data := map[string]interface{}{
     "item": map[string]interface{}{
       "name": "Delivery charges",
       "amount": 30000,
-      "currency": "",
+      "currency": "INR",
       },
     },
   },

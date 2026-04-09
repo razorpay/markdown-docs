@@ -382,7 +382,7 @@ Pass the Checkout options. Ensure that you pass the `order_id` that you received
 var options = {
                 "key": key,
                 "amount": 29935,
-                "currency": "",
+                "currency": "INR",
                 "contact": "+919876543210",
                 "email": "gaurav.kumar@example.com",
                 "order_id": "order_EMBFqjDHEEn80l", // Generate order_id using Orders API

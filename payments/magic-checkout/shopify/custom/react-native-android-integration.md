@@ -374,7 +374,7 @@ Follow the steps given below:
          var options = {
          description: 'Credits towards consultation',
          image: 'https://i.imgur.com/3g7nmJC.jpg',
-         currency: '',
+         currency: 'INR',
          key: '',
          amount: '5000',
          name: 'Acme Corp',
@@ -1358,7 +1358,7 @@ If 9977665544 is entered, `+91` is added to it as +919977665544.
        "order_id": "#32697",
        "payment_id": "pay_Rk3b76fSqXXXXX",
        "payment_method": "netbanking",
-       "payment_currency": "",
+       "payment_currency": "INR",
        "total_amount": 659430,
        "total_tax": "543.91",
        "shipping_fee": 700,
