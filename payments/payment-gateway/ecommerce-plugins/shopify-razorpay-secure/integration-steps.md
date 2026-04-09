@@ -8,7 +8,7 @@ description: Step-by-step guide to integrate Razorpay Payment Gateway with Shopi
 
 Follow the steps given below to integrate 1 Razorpay App on your Shopify store.
 
-  - **1. Build Integration**: Install the 1 Razorpay App.
+  - **1. Build Integration**: Install the Razorpay Secure App.
 
   - **2. Test Integration**: Test the integration by making a test payment.
 
@@ -24,8 +24,11 @@ Follow the steps given below:
          1. Sign up for a .
          2. Once your Razorpay account is activated, click on [this link](https://apps.shopify.com/razorpay-secure) to access the Razorpay Secure App on your Shopify store. Click **Install**.
             
-         3. You will be redirected to a landing page. Click **I am an existing user**.
-         4. Scroll down and click **Login**. 
+         3. Click **Install**.
+            
+         4. You will be redirected to a landing page. **Select Country** of your registered company and click **I am an existing user**.
+            
+         5. Scroll down and click **Login**. 
             
 > **INFO**
 >
@@ -35,7 +38,7 @@ Follow the steps given below:
 >             Make sure you log in with **owner** credentials to connect Razorpay with Shopify successfully.
 >             
 
-         5. Click **Activate** on the activation screen on your Shopify Dashboard. 
+         6. Click **Activate** on the activation screen on your Shopify Dashboard. 
 
             
 
@@ -73,6 +76,9 @@ After the integration of **Shopify - Razorpay Secure** on your Shopify store is 
          
 
          
+         6. Fill in your **Delivery** details and click **Pay now**.
+            
+         7. On the checkout screen, select the payment method, and complete the payment.
 
          
 

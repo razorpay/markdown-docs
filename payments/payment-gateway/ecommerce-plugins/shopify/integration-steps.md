@@ -85,10 +85,10 @@ After the integration of **Shopify - 1 Razorpay** on your Shopify store is compl
          Follow the steps given below to test a transaction in test mode:
 
          1. Log in to your [Shopify store](https://accounts.shopify.com/lookup?rid=f19e1541-cd24-4856-a398-156d2ed5d56f).
-         2. Navigate to **Settings** → **Payments**. 
-         3. On the **Supported payment methods** section, click **Manage** on the **1 Razorpay** app.
+         2. Navigate to **Settings** → **Payments**.
+         3. Under **Additional payment methods** section, click **01. Razorpay UPI, Cards, Wallets** app.
             
-         4. At the bottom of the page, tick the **Enable test mode** option and click **Save**.
+         4. At the bottom of the page, toggle the **Test mode** option and click **Save**.
             
          5. On your Shopify store, add an item to your cart and click **Buy it now**.
             

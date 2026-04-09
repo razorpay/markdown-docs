@@ -13,13 +13,11 @@ Follow these steps:
 1. Log in to the [Shopify Dashboard](https://accounts.shopify.com/).
 1. Navigate to Orders and select the order for which you want to refund.
 3. Click **Refund**.
-    
 4. Enter the amount to be refunded. You can initiate:
     - **Full Refund**: Enter the full order amount.
     - **Partial Refund**: Enter an amount less than the full amount.
 5. Enter a reason for the refund.
 6. Click **Refund**.
-    
 
 ## Refund a Discounted Payment
 
@@ -44,4 +42,4 @@ Discounted Cost (Actual Cost minus Discount Amount) |
 ---
 Amount Refundable to Customer |  
 
-The Order displays the refund details:
+The Order displays the refund details.
