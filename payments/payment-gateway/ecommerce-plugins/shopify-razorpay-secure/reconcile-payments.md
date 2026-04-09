@@ -13,9 +13,7 @@ Reconciling payments made on your Shopify store with the data available on your 
          Follow the steps below to reconcile a payment: 
 
          1. Log in to the [Shopify Dashboard](https://accounts.shopify.com/) and open the **Orders** tab. Click the drop-down to view the Razorpay Secure payment details.
-            
          2. Make a note of the payment id.
-            
          3. Log in to the Dashboard and navigate to **Transactions** → **Payments**. The payment appears on the list of payments. The payment id appears under the **Order Id** column. 
             
          4. Match the payment id (on the Shopify Dashboard) with the Order id (on the Razorpay Dashboard) to map the payments.

@@ -50,7 +50,7 @@ description: Troubleshoot common errors and find answers to frequently asked que
 
          - **Check for Integration with Another Account:** Verify if you have integrated your Shopify Store with a different Razorpay MID. If yes, revoke access under applications and retry the Razorpay Secure [integration steps](https://raw.githubusercontent.com/razorpay/markdown-docs/master/payments/payment-gateway/ecommerce-plugins/shopify-razorpay-secure/integration-steps.md#1-build-integration). 
 
-         - **Enable Keyless Authentication:** Ensure keyless authentication is enabled from Razorpay's end. To enable keyless authentication contact .
+         - **Enable Keyless Authentication:** Ensure keyless authentication is enabled from Razorpay's end. To enable keyless authentication contact our .
         
 
     
@@ -74,7 +74,6 @@ description: Troubleshoot common errors and find answers to frequently asked que
          1. Log in to your Shopify admin panel and navigate to **Settings**→**Payments**. 
          2. Click **Add payment methods**.
          3. Click Search by provider and type **Razorpay**. This will show all the Razorpay payment apps installed on your Shopify store. Click the Razorpay app that you wish to uninstall.
-            
          4. Scroll down to the bottom and click the **Uninstall** button to remove the app from your Shopify store.
             
          This will successfully uninstall the selected Razorpay payment app from your Shopify store.
@@ -114,13 +113,7 @@ description: Troubleshoot common errors and find answers to frequently asked que
         
 
     
-### 9. Why is my Shopify checkout showing only Razorpay Direct (cards) instead of all payment methods?
-
-         You might have only integrated with Razorpay Direct - Credit Card Plugin, which supports card payments only. To accept UPI, Netbanking, Wallets and Cards at checkout, you need to [integrate with 1 Razorpay](https://raw.githubusercontent.com/razorpay/markdown-docs/master/payments/payment-gateway/ecommerce-plugins/shopify-razorpay-secure/integration-steps.md), which is Razorpay's full payment gateway app for Shopify.
-        
-
-    
-### 10. The Razorpay payment option has disappeared from my Shopify checkout after I added another payment provider. Even after removing it, Razorpay does not show up and I see the error "This store can't accept payments right now." What should I do?
+### 9. The Razorpay payment option has disappeared from my Shopify checkout after I added another payment provider. Even after removing it, Razorpay does not show up and I see the error "This store can't accept payments right now." What should I do?
 
          Active payment method customisations typically cause this issue in your Shopify admin. When adding multiple payment providers, these customisations may conflict and prevent Razorpay from appearing at checkout.
 
@@ -135,7 +128,7 @@ description: Troubleshoot common errors and find answers to frequently asked que
         
 
     
-### 11. How can I test a payment for Razorpay Secure on the Shopify store?
+### 10. How can I test a payment for Razorpay Secure on the Shopify store?
 
          You can test a payment for Razorpay Secure on the Shopify store by switching to test mode. Know more about [how to test a transaction in test mode.](https://raw.githubusercontent.com/razorpay/markdown-docs/master/payments/payment-gateway/ecommerce-plugins/shopify-razorpay-secure/integration-steps.md#21-make-a-test-transaction-in-test-mode)
             
@@ -150,7 +143,7 @@ description: Troubleshoot common errors and find answers to frequently asked que
         
 
     
-### 12. After migrating to Razorpay Secure, the checkout option for Razorpay Secure appears at the bottom of the list of gateways. Is it possible to move the Razorpay checkout option to the top of the list of gateways?
+### 11. After migrating to Razorpay Secure, the checkout option for Razorpay Secure appears at the bottom of the list of gateways. Is it possible to move the Razorpay checkout option to the top of the list of gateways?
 
          No. It is not possible to rearrange the order payment options via the store settings of the Shopify Dashboard as it is a limitation from Shopify's end.
         
@@ -158,7 +151,7 @@ description: Troubleshoot common errors and find answers to frequently asked que
 ## Account Management
 
     
-### 13. Can I connect two merchant ids (MIDs) to the same Shopify Store?
+### 12. Can I connect two merchant ids (MIDs) to the same Shopify Store?
 
          No, currently you can connect only one MID to your Shopify Store. 
             
@@ -173,13 +166,13 @@ description: Troubleshoot common errors and find answers to frequently asked que
         
 
     
-### 14. Can I integrate a second Razorpay account with my Shopify store?
+### 13. Can I integrate a second Razorpay account with my Shopify store?
 
          No, Shopify currently supports only one Razorpay account integration per store. If you want to integrate a different Razorpay account, you need to [deactivate](#6-how-do-i-uninstall) the existing integration first and then [activate](https://raw.githubusercontent.com/razorpay/markdown-docs/master/payments/payment-gateway/ecommerce-plugins/shopify-razorpay-secure/integration-steps.md) the new account.
         
 
     
-### 15. I have two Ecommerce websites owned by my company. If I connect both websites to my Razorpay account, will the customers be redirected to the correct webpage after payment?
+### 14. I have two Ecommerce websites owned by my company. If I connect both websites to my Razorpay account, will the customers be redirected to the correct webpage after payment?
 
          Yes, when customers pay through Razorpay on either of your connected websites, they will be redirected to the website they purchased from.
         
@@ -187,13 +180,13 @@ description: Troubleshoot common errors and find answers to frequently asked que
 ## Pricing and Settlements
 
     
-### 16. Will I be charged extra for integrating/migrating to Razorpay Secure app?
+### 15. Will I be charged extra for integrating/migrating to Razorpay Secure app?
 
          No, there will be no additional charges. Your pricing plan will remain the same as earlier.
         
 
     
-### 17. When will my funds be settled?
+### 16. When will my funds be settled?
 
          Funds will be settled as per the existing settlement schedule. There will be no change to it.
         
@@ -201,12 +194,12 @@ description: Troubleshoot common errors and find answers to frequently asked que
 ## Features and Limitations
 
     
-### 18. Does the Shopify Razorpay Secure plugin support 3 or 0 decimal unit currencies?
+### 17. Does the Shopify Razorpay Secure plugin support 3 or 0 decimal unit currencies?
 
          The Shopify Razorpay Secure plugin currently supports only currencies that use 2 decimal units. For example: USD, EUR, INR. It does not support currencies with 0 decimal (for example, JPY) or 3 decimal units (for example, BHD).
         
 
     
-### 19. How do I integrate Meta Pixel to accept payments through Meta Ads?
+### 18. How do I integrate Meta Pixel to accept payments through Meta Ads?
 
          Razorpay does not provide a direct plugin integration for accepting payments through Meta Ads. However, you can use Razorpay Payment Pages with [Facebook Pixel and Google Tracking ID](https://raw.githubusercontent.com/razorpay/markdown-docs/master/payments/payment-pages/plugins-add-ons.md) to track payments and conversions from your Ad campaigns.
