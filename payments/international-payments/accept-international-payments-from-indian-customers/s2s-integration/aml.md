@@ -34,7 +34,7 @@ curl -u [YOUR_KEY_ID]:[YOUR_KEY_SECRET] \
 -H "Content-Type: application/json" \
 -d '{
   "amount": 10000,
-  "currency": "",
+  "currency": "INR",
   "receipt": "receipt#1",
   "customer_id": "cust_OwZZseNBf9Uqsi",
   "customer_details": {
@@ -312,7 +312,7 @@ curl -u [YOUR_KEY_ID]:[YOUR_KEY_SECRET] \
 -H "Content-Type: application/json" \
 -d '{
   "amount": 10000,
-  "currency": "",
+  "currency": "INR",
   "receipt": "receipt#1",
   "customer_id": "cust_OwZZseNBf9Uqsi",
   "reviews": {
@@ -349,7 +349,7 @@ curl -u [YOUR_KEY_ID]:[YOUR_KEY_SECRET] \
   "amount": 10000,
   "amount_paid": 0,
   "amount_due": 10000,
-  "currency": "",
+  "currency": "INR",
   "receipt": "receipt#1",
   "offer_id": null,
   "status": "created",
@@ -784,7 +784,7 @@ curl -u [YOUR_KEY_ID]:[YOUR_KEY_SECRET] \
   "amount": 2200,
   "amount_paid": 0,
   "amount_due": 2200,
-  "currency": "",
+  "currency": "INR",
   "receipt": "Receipt#211",
   "offer_id": null,
   "status": "attempted",

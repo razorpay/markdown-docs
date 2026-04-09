@@ -81,7 +81,7 @@ List order = client.Order.All(orderRequest);
       "amount": 500,
       "amount_paid": 500,
       "amount_due": 0,
-      "currency": "",
+      "currency": "INR",
       "receipt": null,
       "payments": {
         "entity": "collection",
@@ -91,7 +91,7 @@ List order = client.Order.All(orderRequest);
             "id": "pay_MjehkbJc3pPERF",
             "entity": "payment",
             "amount": 500,
-            "currency": "",
+            "currency": "INR",
             "status": "captured",
             "order_id": "order_MjehF7I6RXSm2o",
             "invoice_id": null,

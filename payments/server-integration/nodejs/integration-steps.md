@@ -135,7 +135,7 @@ success.html | A page to redirect users once the payment is successful.
 
           var options = {
             amount: 50000,  // Amount is in currency subunits. 
-            currency: "",
+            currency: "INR",
             receipt: "order_rcptid_11"
           };
           instance.orders.create(options, function(err, order) {
@@ -148,7 +148,7 @@ success.html | A page to redirect users once the payment is successful.
             "amount": 50000,
             "amount_paid": 0,
             "amount_due": 50000,
-            "currency": "",
+            "currency": "INR",
             "receipt": "order_rcptid_11",
             "status": "created",
             "attempts": 0,
@@ -291,7 +291,7 @@ Know more about [Orders API](https://raw.githubusercontent.com/razorpay/markdown
                   headers: {
                     'Content-Type': 'application/json'
                   },
-                  body: JSON.stringify({ amount, currency: '', receipt: 'receipt#1', notes: {} })
+                  body: JSON.stringify({ amount, currency: 'INR', receipt: 'receipt#1', notes: {} })
                 });
 
                 const order = await response.json();
@@ -300,7 +300,7 @@ Know more about [Orders API](https://raw.githubusercontent.com/razorpay/markdown
                 const options = {
                   key: 'YOUR_KEY_ID', // Replace with your Razorpay key_id
                   amount: '50000', // Amount is in currency subunits.
-                  currency: '',
+                  currency: 'INR',
                   name: 'Acme Corp',
                   description: 'Test Transaction',
                   order_id: 'order_IluGWxBm9U8zJ8', // This is the order_id created in the backend
@@ -329,7 +329,7 @@ Know more about [Orders API](https://raw.githubusercontent.com/razorpay/markdown
           var options = {
               "key": "YOUR_KEY_ID", // Enter the Key ID generated from the Dashboard
               "amount": "50000", // Amount is in currency subunits. 
-              "currency": "",
+              "currency": "INR",
               "name": "Acme Corp",
               "description": "Test Transaction",
               "image": "https://example.com/your_logo",
@@ -361,7 +361,7 @@ Know more about [Orders API](https://raw.githubusercontent.com/razorpay/markdown
           var options = {
               "key": "YOUR_KEY_ID", // Enter the Key ID generated from the Dashboard
               "amount": "50000", // Amount is in currency subunits. 
-              "currency": "",
+              "currency": "INR",
               "name": "Acme Corp",
               "description": "Test Transaction",
               "image": "https://example.com/your_logo",

@@ -25,7 +25,7 @@ description: Troubleshoot common error scenarios and find answers to frequently 
      var options = {
          "key": "YOUR_KEY_ID", // Enter the Key ID generated from the Dashboard
          "amount": "50000", // Amount is in currency subunits.
-         "currency": "",
+         "currency": "INR",
          "name": "Acme Corp",
          "description": "Test Transaction",
          "image": "https://example.com/your_logo",
@@ -69,7 +69,7 @@ description: Troubleshoot common error scenarios and find answers to frequently 
      var options = {
          "key": "YOUR_KEY_ID", // Enter the Key ID generated from the Dashboard
          "amount": "50000", // Amount is in currency subunits. 
-         "currency": "",
+         "currency": "INR",
          "name": "Acme Corp",
          "description": "Test Transaction",
          "image": "https://example.com/your_logo",
@@ -141,7 +141,7 @@ description: Troubleshoot common error scenarios and find answers to frequently 
          const options = {
            "key": "YOUR_KEY_ID", // Enter the Key ID generated from the Dashboard
            "amount": "50000", // Amount is in currency subunits. 
-           "currency": "",
+           "currency": "INR",
            "name": "Acme Corp",
            "description": "Test Transaction",
            "image": "https://example.com/your_logo",

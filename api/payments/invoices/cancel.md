@@ -72,7 +72,7 @@ Invoice invoice = client.Invoice.Fetch(invoiceId).Cancel();
   "cancelled_at": 1657203958,
   "comment": "Fresh sea weed mowed this morning",
   "created_at": 1657203943,
-  "currency": "",
+  "currency": "INR",
   "currency_symbol": "",
   "customer_details": {
     "billing_address": null,
@@ -103,7 +103,7 @@ Invoice invoice = client.Invoice.Fetch(invoiceId).Cancel();
   "line_items": [
     {
       "amount": 20000,
-      "currency": "",
+      "currency": "INR",
       "description": "Crate of sea weed.",
       "gross_amount": 20000,
       "hsn_code": null,

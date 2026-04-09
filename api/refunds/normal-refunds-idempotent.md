@@ -44,7 +44,7 @@ curl -u [YOUR_KEY_ID]:[YOUR_KEY_SECRET] \
   "entity": "refund",
   "amount": 500100,
   "receipt": "Receipt No. 31",
-  "currency": "",
+  "currency": "INR",
   "payment_id": "pay_29QQoUBi66xm2f",
   "notes": {},
   "acquirer_data": {

@@ -21,7 +21,7 @@ If you want to list all the payment methods offered by `Axis` bank, allow card p
   var options = {
     "key": "[YOUR_KEY_ID]", // Enter the Key ID generated from the Dashboard
     "amount": "1000",
-    "currency": "",
+    "currency": "INR",
     "description": "Acme Corp",
     "image": "example.com/image/rzp.jpg",
     "prefill":

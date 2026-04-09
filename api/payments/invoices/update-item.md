@@ -29,7 +29,7 @@ JSONObject itemRequest = new JSONObject();
 itemRequest.put("name","Book / Ignited Minds - Updated name!");
 itemRequest.put("description","An indian story, Booker prize winner.");
 itemRequest.put("amount", 20000);
-itemRequest.put("currency","");
+itemRequest.put("currency","INR");
 itemRequest.put("active",true);
               
 Item item = razorpay.items.edit(itemId, itemRequest);
@@ -42,7 +42,7 @@ client.item.edit({
   "name": "Book / Ignited Minds - Updated name!",
   "description": "New descirption too.",
   "amount": 20000,
-  "currency": "",
+  "currency": "INR",
   "active": true
 })
 
@@ -56,7 +56,7 @@ para_attr = {
   "name": "Book / Ignited Minds - Updated name!",
   "description": "New descirption too.",
   "amount": 20000,
-  "currency": "",
+  "currency": "INR",
   "active": true
 }
 
@@ -70,7 +70,7 @@ data:= map[string]interface{}{
     "name": "Book / Ignited Minds - Updated name!",
     "description": "New descirption too.",
     "amount": 20000,
-    "currency": "",
+    "currency": "INR",
     "active": true,
 }
 body, err := client.Item.Update("", data, nil)
@@ -78,7 +78,7 @@ body, err := client.Item.Update("", data, nil)
 ```php: PHP
 $api = new Api($key_id, $secret);
 
-$api->Item->fetch($itemId)->edit(array("name" => "Book / Ignited Minds - Updated name!","description" => "New descirption too.","amount" => 20000,"currency" => "","active" => true
+$api->Item->fetch($itemId)->edit(array("name" => "Book / Ignited Minds - Updated name!","description" => "New descirption too.","amount" => 20000,"currency" => "INR","active" => true
 ));
 
 ```javascript: Node.js
@@ -88,7 +88,7 @@ instance.Items.edit({
   "name": "Book / Ignited Minds - Updated name!",
   "description": "New descirption too.",
   "amount": 20000,
-  "currency": "",
+  "currency": "INR",
   "active": true
 })
 
@@ -102,7 +102,7 @@ para_attr = {
   "name": "Book / Ignited Minds - Updated name!",
   "description": "New descirption too.",
   "amount": 20000,
-  "currency": "",
+  "currency": "INR",
   "active": true
 }
 
@@ -117,7 +117,7 @@ Dictionary itemRequest = new Dictionary();
 itemRequest.Add("name", "Book / Ignited Minds - Updated name!");
 itemRequest.Add("description", "An indian story, Booker prize winner.");
 itemRequest.Add("amount", 20000);
-itemRequest.Add("currency", "");
+itemRequest.Add("currency", "INR");
 itemRequest.Add("active", true);
 
 Item payment = client.Item.Fetch(itemId).Edit(itemRequest);
@@ -133,7 +133,7 @@ Item payment = client.Item.Fetch(itemId).Edit(itemRequest);
   "description": "New descirption too.",
   "amount": 20000,
   "unit_amount": 20000,
-  "currency": "",
+  "currency": "INR",
   "type": "invoice",
   "unit": null,
   "tax_inclusive": false,

@@ -58,13 +58,13 @@ curl -u [YOUR_KEY_ID]:[YOUR_KEY_SECRET]
       "name": "Master Cloud Computing in 30 Days",
       "description": "Book by Ravena Ravenclaw",
       "amount": 399,
-      "currency": "",
+      "currency": "INR",
       "quantity": 1
     }
   ],
   "sms_notify": true,
   "email_notify": false,
-  "currency": "",
+  "currency": "INR",
   "expire_by": 1589765167,
   "notes": {
     "key1": "Testing."
@@ -104,13 +104,13 @@ JSONObject lineItems = new JSONObject();
 lineItems.put("name","Master Cloud Computing in 30 Days");
 lineItems.put("description","Book by Ravena Ravenclaw");
 lineItems.put("amount",399);
-lineItems.put("currency","");
+lineItems.put("currency","INR");
 lineItems.put("quantity",1);
 lines.add(lineItems);
 invoiceRequest.put("line_items",lines);
 invoiceRequest.put("email_notify", true);
 invoiceRequest.put("sms_notify", true);
-invoiceRequest.put("currency","");
+invoiceRequest.put("currency","INR");
 invoiceRequest.put("expire_by", 1580479824);
 
 Invoice invoice = instance.invoices.create(invoiceRequest);
@@ -149,13 +149,13 @@ client.invoice.create({
       "name": "Master Cloud Computing in 30 Days",
       "description": "Book by Ravena Ravenclaw",
       "amount": 399,
-      "currency": "",
+      "currency": "INR",
       "quantity": 1
     }
   ],
   "sms_notify": True,
   "email_notify": True,
-  "currency": "",
+  "currency": "INR",
   "expire_by": 1589765167
 })
 
@@ -168,7 +168,7 @@ line_items["0"] = map[string]interface{}{
       "name": "Master Cloud Computing in 30 Days",
       "description": "Book by Ravena Ravenclaw",
       "amount": 399,
-      "currency": "",
+      "currency": "INR",
       "quantity": 1,
     }
 
@@ -200,7 +200,7 @@ data := map[string]interface{}{
   "line_items": line_items,
   "sms_notify": true,
   "email_notify": true,
-  "currency": "",
+  "currency": "INR",
   "expire_by": 1589765167
 }
 body, err := client.Invoice.Create(data, nil)
@@ -237,13 +237,13 @@ $api->invoice->create(array(
             'name' => 'Master Cloud Computing in 30 Days',
             'description' => 'Book by Ravena Ravenclaw',
             'amount' => 399,
-            'currency' => '',
+            'currency' => 'INR',
             'quantity' => 1
         )
     ),
     'sms_notify' => true,
     'email_notify' => true,
-    'currency' => '',
+    'currency' => 'INR',
     'expire_by' => 1589765167
 ));
 
@@ -281,13 +281,13 @@ Razorpay::Invoice.create({
       "name": "Master Cloud Computing in 30 Days",
       "description": "Book by Ravena Ravenclaw",
       "amount": 399,
-      "currency": "",
+      "currency": "INR",
       "quantity": 1
     }
   ],
   "sms_notify": 1,
   "email_notify": 1,
-  "currency": "",
+  "currency": "INR",
   "expire_by": 1589765167
 })
 
@@ -324,13 +324,13 @@ instance.invoice.create({
       "name": "Master Cloud Computing in 30 Days",
       "description": "Book by Ravena Ravenclaw",
       "amount": 399,
-      "currency": "",
+      "currency": "INR",
       "quantity": 1
     }
   ],
   "sms_notify": true,
   "email_notify": true,
-  "currency": "",
+  "currency": "INR",
   "expire_by": 1589765167
 })
 
@@ -367,13 +367,13 @@ Dictionary lineItems = new Dictionary();
 lineItems.Add("name", "Master Cloud ComAdding in 30 Days");
 lineItems.Add("description", "Book by Ravena Ravenclaw");
 lineItems.Add("amount", 399);
-lineItems.Add("currency", "");
+lineItems.Add("currency", "INR");
 lineItems.Add("quantity", 1);
 lines.Add(lineItems);
 invoiceRequest.Add("line_items", lines);
 invoiceRequest.Add("email_notify", true);
 invoiceRequest.Add("sms_notify", true);
-invoiceRequest.Add("currency", "");
+invoiceRequest.Add("currency", "INR");
 invoiceRequest.Add("expire_by", 1580479824);
 
 Invoice invoice = client.Invoice.Create(invoiceRequest);
@@ -435,7 +435,7 @@ Invoice invoice = client.Invoice.Create(invoiceRequest);
       "tax_amount": 0,
       "taxable_amount": 399,
       "net_amount": 399,
-      "currency": "",
+      "currency": "INR",
       "type": "invoice",
       "tax_inclusive": false,
       "hsn_code": null,
@@ -464,7 +464,7 @@ Invoice invoice = client.Invoice.Create(invoiceRequest);
   "amount": 399,
   "amount_paid": 0,
   "amount_due": 399,
-  "currency": "",
+  "currency": "INR",
   "currency_symbol": "$",
   "description": "Invoice for the month of January 2020",
   "notes": [],

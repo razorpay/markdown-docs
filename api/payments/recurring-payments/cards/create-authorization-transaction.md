@@ -228,7 +228,7 @@ curl -u : \
 -H "Content-Type: application/json" \
 -d '{
    "amount":100,
-   "currency":"",
+   "currency":"INR",
    "customer_id":"cust_4xbQrmEoA5WJ01",
    "method":"card",
    "token": {
@@ -248,7 +248,7 @@ RazorpayClient razorpay = new RazorpayClient("[YOUR_KEY_ID]", "[YOUR_KEY_SECRET]
 
 JSONObject orderRequest = new JSONObject();
 orderRequest.put("amount", 100);
-orderRequest.put("currency", "");
+orderRequest.put("currency", "INR");
 orderRequest.put("customer_id", "cust_4xbQrmEoA5WJ01");
 orderRequest.put("method", "card");
 JSONObject token = new JSONObject();
@@ -267,14 +267,14 @@ Order order = razorpay.orders.create(orderRequest);
 ```php: PHP
 $api = new Api($key_id, $secret);
 
-$api->order->create(array('amount' => 100, 'currency' => '',  'receipt' => '123', 'customer_id'=> $customerId, 'method'=>'card', 'token' => array('max_amount' => 100000000, 'expire_at' => 2709971120, 'frequency' => 'monthly'), 'notes'=> array('key1'=> 'value3','key2'=> 'value2')));
+$api->order->create(array('amount' => 100, 'currency' => 'INR',  'receipt' => '123', 'customer_id'=> $customerId, 'method'=>'card', 'token' => array('max_amount' => 100000000, 'expire_at' => 2709971120, 'frequency' => 'monthly'), 'notes'=> array('key1'=> 'value3','key2'=> 'value2')));
 
 ```javascript: Node.js
 var instance = new Razorpay({ key_id: 'YOUR_KEY_ID', key_secret: 'YOUR_SECRET' })
 
 instance.orders.create({
    "amount":100,
-   "currency":"",
+   "currency":"INR",
    "customer_id":"cust_4xbQrmEoA5WJ01",
    "method":"card",
    "token": {
@@ -294,7 +294,7 @@ client = razorpay.Client(auth=("YOUR_ID", "YOUR_SECRET"))
 
 client.order.create({
     'amount': 50000,
-    'currency': '',
+    'currency': 'INR',
     'customer_id': 'cust_4xbQrmEoA5WJ01',
     'method': 'card',
     'token':{
@@ -312,7 +312,7 @@ Razorpay.setup('YOUR_KEY_ID', 'YOUR_SECRET')
 
 param_attr = {
    "amount":100,
-   "currency": "",
+   "currency": "INR",
    "customer_id": "cust_4xbQrmEoA5WJ01",
    "method": "card",
    "token": {
@@ -335,7 +335,7 @@ client := razorpay.NewClient("YOUR_KEY_ID", "YOUR_SECRET")
 
 data := map[string]interface{}{
    "amount":100,
-   "currency":"",
+   "currency":"INR",
    "customer_id":"",
    "method":"card",
    "token":map[string]interface{}{
@@ -356,7 +356,7 @@ RazorpayClient client = new RazorpayClient("[YOUR_KEY_ID]", "[YOUR_KEY_SECRET]")
 
 Dictionary orderRequest = new Dictionary();
 orderRequest.Add("amount", 100);
-orderRequest.Add("currency", "");
+orderRequest.Add("currency", "INR");
 orderRequest.Add("customer_id", "cust_Z6t7VFTb9xHeOs");
 orderRequest.Add("method", "card");
 Dictionary token = new Dictionary();
@@ -380,7 +380,7 @@ Order order = client.Order.Create(orderRequest);
    "amount":100,
    "amount_paid":0,
    "amount_due":100,
-   "currency":"",
+   "currency":"INR",
    "receipt":"Receipt No. 1",
    "method":"card",
    "description":null,
@@ -626,7 +626,7 @@ curl -u :
   },
   "type":"link",
   "amount":"100",
-  "currency":"",
+  "currency":"INR",
   "description":"Registration Link for Gaurav Kumar",
   "subscription_registration":{
     "method":"card",
@@ -655,7 +655,7 @@ customer.put("contact","+919876543210");
 registrationLinkRequest.put("customer", customer);
 registrationLinkRequest.put("type", "link");
 registrationLinkRequest.put("amount", 100);
-registrationLinkRequest.put("currency", "");
+registrationLinkRequest.put("currency", "INR");
 registrationLinkRequest.put("description", "Registration Link for Gaurav Kumar");
 JSONObject subscriptionRegistration = new JSONObject();
 subscriptionRegistration.put("method","card");
@@ -677,7 +677,7 @@ Invoice invoice = razorpay.invoices.createRegistrationLink(registrationLinkReque
 ```php: PHP
 $api = new Api($key_id, $secret);
 
-$api->subscription->createSubscriptionRegistration(array('customer'=>array('name'=>'Gaurav Kumar','email'=>'gaurav.kumar@example.com','contact'=>'+919876543210'),'type'=>'link','amount'=>100,'currency'=>'','description'=>'Registration Link for Gaurav Kumar','subscription_registration'=>array('method'=>'card','max_amount'=>'1000000','expire_at'=>'1634215992','frequency'=>'monthly'),'receipt'=>'Receipt No. 5','email_notify'=> true,'sms_notify'=>true,'expire_by'=>1634215992, 'notes'=> array('note_key 1'=> 'Beam me up Scotty','note_key 2'=> 'Tea. Earl Gray. Hot.')));
+$api->subscription->createSubscriptionRegistration(array('customer'=>array('name'=>'Gaurav Kumar','email'=>'gaurav.kumar@example.com','contact'=>'+919876543210'),'type'=>'link','amount'=>100,'currency'=>'INR','description'=>'Registration Link for Gaurav Kumar','subscription_registration'=>array('method'=>'card','max_amount'=>'1000000','expire_at'=>'1634215992','frequency'=>'monthly'),'receipt'=>'Receipt No. 5','email_notify'=> true,'sms_notify'=>true,'expire_by'=>1634215992, 'notes'=> array('note_key 1'=> 'Beam me up Scotty','note_key 2'=> 'Tea. Earl Gray. Hot.')));
 ```javascript: Node.js
 var instance = new Razorpay({ key_id: 'YOUR_KEY_ID', key_secret: 'YOUR_SECRET' })
 
@@ -689,7 +689,7 @@ instance.subscriptions.createRegistrationLink({
   },
   type: "link",
   amount: 100,
-  currency: "",
+  currency: "INR",
   description: "Registration Link for Gaurav Kumar",
   subscription_registration: {
     method: "card",
@@ -715,7 +715,7 @@ client.registration_link.create({
                  'contact': '+919876543210'},
     'type': 'link',
     'amount': '100',
-    'currency': '',
+    'currency': 'INR',
     'description': 'Registration Link for Gaurav',
     'subscription_registration': {'method': 'card', 'max_amount': '1000000'
                                   , 'expire_at': 1644737663, 'frequency': 'monthly'},
@@ -739,7 +739,7 @@ para_attr = {
   },
   "type": "link",
   "amount": "100",
-  "currency": "",
+  "currency": "INR",
   "description": "Registration Link for Gaurav Kumar",
   "subscription_registration":{
     "method": "card",
@@ -771,7 +771,7 @@ data:= map[string]interface{}{
   },
   "type":"link",
   "amount":"100",
-  "currency":"",
+  "currency":"INR",
   "description":"Registration Link for Gaurav Kumar",
   "subscription_registration":map[string]interface{}{
     "method":"card",
@@ -802,7 +802,7 @@ customer.Add("contact", "+919876543210");
 registrationLinkRequest.Add("customer", customer);
 registrationLinkRequest.Add("type", "link");
 registrationLinkRequest.Add("amount", 100);
-registrationLinkRequest.Add("currency", "");
+registrationLinkRequest.Add("currency", "INR");
 registrationLinkRequest.Add("description", "Registration Link for Gaurav Kumar");
 Dictionary subscriptionRegistration = new Dictionary();
 subscriptionRegistration.Add("method", "card");
@@ -860,7 +860,7 @@ Invoice invoice = client.Invoice.CreateRegistrationLink(registrationLinkRequest)
   "amount": 100,
   "amount_paid": 0,
   "amount_due": 100,
-  "currency": "",
+  "currency": "INR",
   "currency_symbol": "₹",
   "description": "Registration Link for Gaurav Kumar",
   "notes": {
@@ -1264,7 +1264,7 @@ The following endpoint cancels a registration link.
         "amount": 100,
         "amount_paid": 0,
         "amount_due": 100,
-        "currency": "",
+        "currency": "INR",
         "currency_symbol": "₹",
         "description": "Registration Link for Gaurav Kumar",
         "notes": {

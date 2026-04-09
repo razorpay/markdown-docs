@@ -50,7 +50,7 @@ The sample code shown below allows the checkout to accept a card payment of .
 ```java: Java
 JSONObject data = new JSONObject();
 data.put("amount", 29935);
-data.put("currency", "");
+data.put("currency", "INR");
 data.put("order_id", "order_DgZ26rHjbzLLY2");//sample order_id. Generate orders using Orders API
 data.put("email", "gaurav.kumar@example.com");
 data.put("contact", "+919876543210");
@@ -63,7 +63,7 @@ data.put("card[cvv]", "100");
 ```kotlin: Kotlin
 val data = JSONObject()
 data.put("amount", 29935)
-data.put("amount", "")
+data.put("amount", "INR")
 data.put("order_id", "order_DgZ26rHjbzLLY2") //sample order_id. Generate orders using Orders API
 data.put("email", "gaurav.kumar@example.com")
 data.put("contact", "+919876543210")
@@ -150,7 +150,7 @@ For Cardless EMI, `method` should be specified as `cardless_emi` and an addition
 The sample code below allows checkout to accept a card payment of ₹5999.35:
 
 ```java: Java
-JSONObject payload = new JSONObject("{\"currency\":\"\"}");
+JSONObject payload = new JSONObject("{\"currency\":\"INR\"}");
 payload.put("amount", 599935);
 payload.put("contact", "+919876543210");
 payload.put("order_id", "order_9A33XWu170gUtm");
@@ -158,7 +158,7 @@ payload.put("email", "gaurav.kumar@example.com");
 payload.put("method", "cardless_emi");
 payload.put("provider", "walnut369");
 ```kotlin: Kotlin
-val payload = JSONObject("{\"currency\":\"\"}")
+val payload = JSONObject("{\"currency\":\"INR\"}")
 payload.put("amount", 599935)
 payload.put("contact", "+919876543210")
 payload.put("order_id", "order_9A33XWu170gUtm")
@@ -206,7 +206,7 @@ For pay later, `method` should be specified as `paylater` and an additional fiel
 Use the sample code given below:
 
 ```java: Java
-JSONObject payload = new JSONObject("{\"currency\":\"\"}");
+JSONObject payload = new JSONObject("{\"currency\":\"INR\"}");
 payload.put("amount",5000);
 payload.put("contact","+919876543210");
 payload.put("order_id","order_9A33XWu170gUtm");
@@ -214,7 +214,7 @@ payload.put("email", "gaurav.kumar@example.com");
 payload.put("method", "paylater");
 payload.put("provider", "lazypay");
 ```kotlin: Kotlin
-val payload = JSONObject("{\"currency\":\"\"}")
+val payload = JSONObject("{\"currency\":\"INR\"}")
 payload.put("amount", 5000)
 payload.put("contact", "+919876543210")
 payload.put("order_id", "order_9A33XWu170gUtm")
@@ -386,7 +386,7 @@ To implement this flow:
     - Invoke UPI Autopay Intent (Default)
 
         ```java: Java
-        JSONObject data = new JSONObject("{currency: ''}");
+        JSONObject data = new JSONObject("{currency: 'INR'}");
         data.put("amount", "10000");
         data.put("contact", "+919876543210");
         data.put("email", "gaurav.kumar@example.com");
@@ -398,7 +398,7 @@ To implement this flow:
         data.put("_[flow]", "intent");
         data.put("upi_app_package_name","com.google.android.apps.nbu.paisa.user"); // pass package name that is returned in getAppsWhichSupportUpi and/or getAppsWhichSupportUpiAutopay
         ```kotlin: Kotlin
-        val data = JSONObject("{currency: ''}")
+        val data = JSONObject("{currency: 'INR'}")
         data.put("amount", "10000")
         data.put("contact", "+919876543210")
         data.put("email", "gaurav.kumar@example.com")
@@ -414,7 +414,7 @@ To implement this flow:
     - Preferred Payload for Recurring: In the sample code below, `recurring` is passed as `preferred`. It initiates a flow in SDK where, if a selected app supports Autopay payments, the payment passes via the Autopay payment route. If it does not, then it passes via the one-time payment route.
 
         ```java: Java 
-        JSONObject data = new JSONObject("{currency: ''}");
+        JSONObject data = new JSONObject("{currency: 'INR'}");
         data.put("amount", "10000");
         data.put("contact", "+919876543210");
         data.put("email", "gaurav.kumar@example.com");
@@ -426,7 +426,7 @@ To implement this flow:
         data.put("_[flow]", "intent");
         data.put("upi_app_package_name","com.google.android.apps.nbu.paisa.user"); // pass package name that is returned in getAppsWhichSupportUpi and/or getAppsWhichSupportUpiAutopay
         ```kotlin: Kotlin
-        val data = JSONObject("{currency: ''}")
+        val data = JSONObject("{currency: 'INR'}")
         data.put("amount", "10000")
         data.put("contact", "+919876543210")
         data.put("email", "gaurav.kumar@example.com")

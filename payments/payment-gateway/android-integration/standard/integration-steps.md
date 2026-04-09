@@ -183,7 +183,7 @@ You can create an order using:
         -H 'content-type:application/json'
         -d '{
             "amount": 50000,
-            "currency": "",
+            "currency": "INR",
             "receipt": "qwsaq1",
             "partial_payment": true,
             "first_payment_min_amount": 230
@@ -193,7 +193,7 @@ You can create an order using:
 
         JSONObject orderRequest = new JSONObject();
         orderRequest.put("amount", 50000); // amount in the smallest currency unit
-        orderRequest.put("currency", "");
+        orderRequest.put("currency", "INR");
         orderRequest.put("receipt", "order_rcptid_11");
 
         Order order = razorpay.Orders.create(orderRequest);
@@ -207,7 +207,7 @@ You can create an order using:
 
         DATA = {
             "amount": 50000,
-            "currency": "",
+            "currency": "INR",
             "receipt": "receipt#1",
             "notes": {
                 "key1": "value3",
@@ -218,27 +218,27 @@ You can create an order using:
         ```php: PHP
         $api = new Api($key_id, $secret);
 
-        $api->order->create(array('receipt' => '123', 'amount' => 50000, 'currency' => '', 'notes'=> array('key1'=> 'value3','key2'=> 'value2')));
+        $api->order->create(array('receipt' => '123', 'amount' => 50000, 'currency' => 'INR', 'notes'=> array('key1'=> 'value3','key2'=> 'value2')));
         ```csharp: .NET
         RazorpayClient client = new RazorpayClient(your_key_id, your_secret);
 
         Dictionary options = new Dictionary();
         options.Add("amount", 50000); // amount in the smallest currency unit
         options.add("receipt", "order_rcptid_11");
-        options.add("currency", "");
+        options.add("currency", "INR");
         Order order = client.Order.Create(options);
         ```ruby: Ruby
         require "razorpay"
         Razorpay.setup('YOUR_KEY_ID', 'YOUR_SECRET')
 
-        options = amount: 50000, currency: '', receipt: ''
+        options = amount: 50000, currency: 'INR', receipt: ''
         order = Razorpay::Order.create
         ```javascript: Node.js
         var instance = new Razorpay({ key_id: 'YOUR_KEY_ID', key_secret: 'YOUR_SECRET' })
 
         instance.orders.create({
         amount: 50000,
-        currency: "",
+        currency: "INR",
         receipt: "receipt#1",
         notes: {
             key1: "value3",
@@ -251,7 +251,7 @@ You can create an order using:
 
         data := map[string]interface{}{
         "amount": 50000,
-        "currency": "",
+        "currency": "INR",
         "receipt": "some_receipt_id"
         }
         body, err := client.Order.Create(data)
@@ -264,7 +264,7 @@ You can create an order using:
             "amount": 50000,
             "amount_paid": 0,
             "amount_due": 50000,
-            "currency": "",
+            "currency": "INR",
             "receipt": "rcptid_11",
             "offer_id": null,
             "status": "created",
@@ -356,7 +356,7 @@ You can create an order using:
          Create a `JSONObject` to send it to the SDK.
 
          ```java: Java
-         PayloadHelper payloadHelper = new PayloadHelper("", 100, "order_XXXXXXXXX");
+         PayloadHelper payloadHelper = new PayloadHelper("INR", 100, "order_XXXXXXXXX");
                payloadHelper.setName("Gaurav Kumar");
                payloadHelper.setDescription("Description");
                payloadHelper.setPrefillEmail("gaurav.kumar@example.com");
@@ -388,10 +388,10 @@ You can create an order using:
                payloadHelper.setReadOnlyName(true);
                payloadHelper.setImage("https://www.razorpay.com");
                payloadHelper.setAmount(100);
-               payloadHelper.setCurrency("");
+               payloadHelper.setCurrency("INR");
                payloadHelper.setOrderId("order_XXXXXXXXXXXXXX");
          ```java: Kotlin
-         val payloadHelper = PayloadHelper("", 100, "order_XXXXXXXXX")
+         val payloadHelper = PayloadHelper("INR", 100, "order_XXXXXXXXX")
                  payloadHelper.name = "Gaurav Kumar"
                  payloadHelper.description = "Description"
                  payloadHelper.prefillEmail = "gaurav.kumar@example.com"
@@ -424,7 +424,7 @@ You can create an order using:
                  payloadHelper.image = "https://www.razorpay.com"
                  // these values are set mandatorily during object initialization. Those values can be overridden like this
                  payloadHelper.amount=100
-                 payloadHelper.currency=""
+                 payloadHelper.currency="INR"
                  payloadHelper.orderId = "order_XXXXXXXXXXXXXX"
          ```
 
@@ -467,7 +467,7 @@ You can create an order using:
                options.put("image", "http://example.com/image/rzp.jpg");
                options.put("order_id", "order_DBJOWzybf0sJbb");//from response of step 3.
                options.put("theme.color", "#3399cc");
-               options.put("currency", "");
+               options.put("currency", "INR");
                options.put("amount", "50000");//pass amount in currency subunits
                options.put("prefill.email", "gaurav.kumar@example.com");
                options.put("prefill.contact","+919876543210");
@@ -497,7 +497,7 @@ You can create an order using:
                      //You can omit the image option to fetch the image from the Dashboard
                      options.put("image","http://example.com/image/rzp.jpg")
                      options.put("theme.color", "#3399cc");
-                     options.put("currency","");
+                     options.put("currency","INR");
                      options.put("order_id", "order_DBJOWzybf0sJbb");
                      options.put("amount","50000")//pass amount in currency subunits
 

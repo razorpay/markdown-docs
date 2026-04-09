@@ -120,7 +120,7 @@ On the checkout form or when using APIs for Razorpay products such as Orders, Pa
            "amount": 100,
            "currency": "USD",
            "base_amount": 7129,
-           "base_currency": "",
+           "base_currency": "INR",
            "status": "captured",
            "order_id": "order_CjCr5oKh4AVC51",
            "international": true,

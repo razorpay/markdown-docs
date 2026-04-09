@@ -73,7 +73,7 @@ Payment payment = client.Payment.Fetch(paymentId);
   "id": "pay_FHfqtkRzWvxky4",
   "entity": "payment",
   "amount": 100,
-  "currency": "",
+  "currency": "INR",
   "status": "captured",
   "order_id": "order_FHfnswDdfu96HQ",
   "invoice_id": null,

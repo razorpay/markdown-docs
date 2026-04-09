@@ -875,7 +875,7 @@ Order order = client.Order.Create(orderRequest);
          let options: [String:Any] = [
                      "key": "YOUR_KEY_ID",
                      "amount": "100", //This is in currency subunits. 100 = 100 paise= INR 1.
-                     "currency": "",//We support more that 92 international currencies.
+                     "currency": "INR",//We support more that 92 international currencies.
                      "description": "purchase description",
                      "order_id": "order_DBJOWzybf0sJbb",
                      "image": "https://url-to-image.jpg",
@@ -898,7 +898,7 @@ Order order = client.Order.Create(orderRequest);
                                  @"key": @"YOUR_KEY_ID",
                                  @"amount": @"1000",  //This is in currency subunits. 1000 = 1000 paise= INR 10.
                                  // all optional other than amount.
-                                 @"currency": @"",  //We support more that 92 international currencies.
+                                 @"currency": @"INR",  //We support more that 92 international currencies.
                                  @"image": @"https://url-to-image.jpg",
                                  @"name": @"business or product name",
                                  @"description": @"purchase description",

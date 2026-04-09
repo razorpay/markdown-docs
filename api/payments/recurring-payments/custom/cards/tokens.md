@@ -51,7 +51,7 @@ body, err := client.Payment.Fetch("", nil, nil)
   "id": "pay_FHfqtkRzWvxky4",
   "entity": "payment",
   "amount": 100,
-  "currency": "",
+  "currency": "INR",
   "status": "captured",
   "order_id": "order_FHfnswDdfu96HQ",
   "invoice_id": null,

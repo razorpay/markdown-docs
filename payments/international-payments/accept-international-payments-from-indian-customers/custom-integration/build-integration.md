@@ -656,7 +656,7 @@ Know more about [sample codes for various payment methods](https://raw.githubuse
 ```js: createPayment with handler function
 var data = {
   amount: 1000, // in currency subunits.
-  currency: "",// Default is INR. We support more than 90 currencies.
+  currency: "INR",// Default is INR. We support more than 90 currencies.
   email: 'gaurav.kumar@example.com',
   contact: '+919876543210',
   customer_id: 'cust_MpINfSkdEvtdxb',
@@ -689,7 +689,7 @@ btn.addEventListener('click', function(){
 var data = {
   callback_url: 'https://www.examplecallbackurl.com/',
   amount: 1000, // in currency subunits.
-  currency: "",// Default is INR. We support more than 90 currencies.
+  currency: "INR",// Default is INR. We support more than 90 currencies.
   email: 'gaurav.kumar@example.com',
   contact: '+919876543210',
   customer_id: 'cust_MpINfSkdEvtdxb',

@@ -53,7 +53,7 @@ PATCH | Applies partial modifications to a resource. | [Update Order](https://ra
         "id": "pay_DG4ZdRK8ZnXC3k",
         "entity": "payment",
         "amount": 5000,
-        "currency": "",
+        "currency": "INR",
         "status": "captured",
         "order_id": null,
         "invoice_id": null,

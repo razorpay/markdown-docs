@@ -17,7 +17,7 @@ The Items entity has the following parameters:
   "description": "An Indian story, Booker prize winner.",
   "amount": 20000,
   "unit_amount": 20000,
-  "currency": "",
+  "currency": "INR",
   "type": "invoice",
   "unit": null,
   "tax_inclusive": false,

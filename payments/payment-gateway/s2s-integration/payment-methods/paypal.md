@@ -127,7 +127,7 @@ curl -X POST https://api.razorpay.com/v1/orders
 -H 'content-type:application/json'
 -d '{
   "amount": 50000,
-  "currency": "",
+  "currency": "INR",
   "receipt": "qwsaq1",
   "partial_payment": true,
   "first_payment_min_amount": 230,
@@ -141,7 +141,7 @@ RazorpayClient razorpay = new RazorpayClient("[YOUR_KEY_ID]", "[YOUR_KEY_SECRET]
 
 JSONObject orderRequest = new JSONObject();
 orderRequest.put("amount",50000);
-orderRequest.put("currency","");
+orderRequest.put("currency","INR");
 orderRequest.put("receipt", "receipt#1");
 JSONObject notes = new JSONObject();
 notes.put("notes_key_1","Tea, Earl Grey, Hot");
@@ -155,7 +155,7 @@ client = razorpay.Client(auth=("YOUR_ID", "YOUR_SECRET"))
 
 client.order.create({
   "amount": 50000,
-  "currency": "",
+  "currency": "INR",
   "receipt": "receipt#1",
   "partial_payment": false,
   "notes": {
@@ -166,13 +166,13 @@ client.order.create({
 ```php: PHP
 $api = new Api($key_id, $secret);
 
-$api->order->create(array('receipt' => '123', 'amount' => 50000, 'currency' => '', 'notes'=> array('key1'=> 'value3','key2'=> 'value2')));
+$api->order->create(array('receipt' => '123', 'amount' => 50000, 'currency' => 'INR', 'notes'=> array('key1'=> 'value3','key2'=> 'value2')));
 ```csharp: .NET
 RazorpayClient client = new RazorpayClient("[YOUR_KEY_ID]", "[YOUR_KEY_SECRET]");
 
 Dictionary orderRequest = new Dictionary();
 orderRequest.Add("amount", 50000);
-orderRequest.Add("currency", "");
+orderRequest.Add("currency", "INR");
 orderRequest.Add("receipt", "receipt#1");
 Dictionary notes = new Dictionary();
 notes.Add("notes_key_1", "Tea, Earl Grey, Hot");
@@ -186,7 +186,7 @@ Razorpay.setup('YOUR_KEY_ID', 'YOUR_SECRET')
 
 para_attr = {
   "amount": 50000,
-  "currency": "",
+  "currency": "INR",
   "receipt": "receipt#1",
   "notes": {
     "key1": "value3",
@@ -200,7 +200,7 @@ var instance = new Razorpay({ key_id: 'YOUR_KEY_ID', key_secret: 'YOUR_SECRET' }
 
 instance.orders.create({
   "amount": 50000,
-  "currency": "",
+  "currency": "INR",
   "receipt": "receipt#1",
   "partial_payment": false,
   "notes": {
@@ -214,7 +214,7 @@ client := razorpay.NewClient("YOUR_KEY_ID", "YOUR_SECRET")
 
 data := map[string]interface{}{
   "amount": 50000,
-  "currency": "",
+  "currency": "INR",
   "receipt": "some_receipt_id",
   "partial_payment": false,
   "notes": map[string]interface{}{
@@ -232,7 +232,7 @@ body, err := client.Order.Create(data, nil)
   "amount": 50000,
   "amount_paid": 0,
   "amount_due": 50000,
-  "currency": "",
+  "currency": "INR",
   "receipt": "rcptid_11",
   "offer_id": null,
   "status": "created",
@@ -302,7 +302,7 @@ curl -u [YOUR_KEY_ID]:[YOUR_KEY_SECRET] \
 -H "Content-Type: application/json" \
  -d '{
   "amount": "50000",
-  "currency": "",
+  "currency": "INR",
   "email": "gaurav.kumar@example.com",
   "contact": "+919876543210",
   "order_id": "order_EAkbvXiCJlwhHR",
@@ -314,14 +314,14 @@ curl -u [YOUR_KEY_ID]:[YOUR_KEY_SECRET] \
 ```php: PHP
 $api = new Api($key_id, $secret);
 
-$api->payment->createPaymentJson(array('amount' => 50000,'currency' => '','email' => 'gaurav.kumar@example.com','contact' => '+919876543210','order_id' => 'order_I6LVPRQ6upW3uh','ip' => '198.29.65.27','method' => 'wallet','wallet' => 'paypal'));
+$api->payment->createPaymentJson(array('amount' => 50000,'currency' => 'INR','email' => 'gaurav.kumar@example.com','contact' => '+919876543210','order_id' => 'order_I6LVPRQ6upW3uh','ip' => '198.29.65.27','method' => 'wallet','wallet' => 'paypal'));
 
 ```javascript: Node.js
 var instance = new Razorpay({ key_id: 'YOUR_KEY_ID', key_secret: 'YOUR_SECRET' })
 
 instance.payments.createPaymentJson({
   amount: 50000,
-  currency: "",
+  currency: "INR",
   order_id: "order_EAkbvXiCJlwhHR",
   ip: "198.29.65.27",
   email: "gaurav.kumar@example.com",
@@ -337,7 +337,7 @@ client = razorpay.Client(auth=("key", "secret"))
 
 resp = client.payment.createPaymentJson({
   "amount": 50000,
-  "currency": "",
+  "currency": "INR",
   "order_id": "order_ItZMEZjpBD6dhT",
   "ip": "198.29.65.27",
   "email": "gaurav.kumar@example.com",
@@ -352,7 +352,7 @@ client := razorpay.NewClient("YOUR_KEY_ID", "YOUR_SECRET")
 
 para_attr := map[string]interface{}{
   "amount": 50000,
-  "currency": "",
+  "currency": "INR",
   "order_id": "order_EAkbvXiCJlwhHR",
   "ip": "198.29.65.27",
   "email": "gaurav.kumar@example.com",

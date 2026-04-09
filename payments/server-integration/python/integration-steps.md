@@ -95,7 +95,7 @@ success.html | A page to redirect users once the payment is successful.
                   import razorpay
                   client = razorpay.Client(auth=("YOUR_ID", "YOUR_SECRET"))
 
-                  data = { "amount": 50000, "currency": "", "receipt": "order_rcptid_11" }
+                  data = { "amount": 50000, "currency": "INR", "receipt": "order_rcptid_11" }
                   payment = client.order.create(data=data) // Amount is in currency subunits. 
 
                   ```json: Response
@@ -105,7 +105,7 @@ success.html | A page to redirect users once the payment is successful.
                   "amount": 50000,
                   "amount_paid": 0,
                   "amount_due": 50000,
-                  "currency": "",
+                  "currency": "INR",
                   "receipt": "rcptid_11",
                   "status": "created",
                   "attempts": 0,
@@ -219,7 +219,7 @@ Know more about [Orders API](https://raw.githubusercontent.com/razorpay/markdown
                   var options = {
                       "key": "YOUR_KEY_ID", // Enter the Key ID generated from the Dashboard
                       "amount": "50000", // Amount is in currency subunits. 
-                      "currency": "",
+                      "currency": "INR",
                       "name": "Acme Corp",
                       "description": "Test Transaction",
                       "image": "https://example.com/your_logo",
@@ -263,7 +263,7 @@ Know more about [Orders API](https://raw.githubusercontent.com/razorpay/markdown
                   var options = {
                       "key": "YOUR_KEY_ID", // Enter the Key ID generated from the Dashboard
                       "amount": "50000", // Amount is in currency subunits. 
-                      "currency": "",
+                      "currency": "INR",
                       "name": "Acme Corp",
                       "description": "Test Transaction",
                       "image": "https://example.com/your_logo",

@@ -49,7 +49,7 @@ curl -u [YOUR_KEY_ID]:[YOUR_KEY_SECRET]
     {
       "name": "Book / A Wild Sheep Chase",
       "amount": 200,
-      "currency": "",
+      "currency": "INR",
       "quantity": 1
     }
   ],
@@ -72,7 +72,7 @@ lineItems.put("quantity",1);
 JSONObject lineItems1 = new JSONObject();
 lineItems1.put("name","Book / A Wild Sheep Chase");
 lineItems1.put("amount","200");
-lineItems1.put("currency","");
+lineItems1.put("currency","INR");
 lineItems1.put("quantity",1);
 lines.add(lineItems);
 lines.add(lineItems1);
@@ -97,7 +97,7 @@ client.invoice.edit(invoiceId,{
     {
       "name": "Book / A Wild Sheep Chase",
       "amount": 200,
-      "currency": "",
+      "currency": "INR",
       "quantity": 1
     }
   ],
@@ -141,7 +141,7 @@ para_attr = {
     {
       "name": "Book / A Wild Sheep Chase",
       "amount": 200,
-      "currency": "",
+      "currency": "INR",
       "quantity": 1
     }
   ],
@@ -155,7 +155,7 @@ Razorpay::Invoice.edit(invoiceId,para_attr)
 ```php: PHP
 $api = new Api($key_id, $secret);
 
-$api->invoice->fetch($invoiceId)->edit(array('line_items' => array(array('id' => 'li_DAweOizsysoJU6','name' => 'Book / English August - Updated name and quantity','quantity' => 1),array('name' => 'Book / A Wild Sheep Chase','amount' => 200,'currency' => '','quantity' => 1)),'notes' => array('updated-key' => 'An updated note.')));
+$api->invoice->fetch($invoiceId)->edit(array('line_items' => array(array('id' => 'li_DAweOizsysoJU6','name' => 'Book / English August - Updated name and quantity','quantity' => 1),array('name' => 'Book / A Wild Sheep Chase','amount' => 200,'currency' => 'INR','quantity' => 1)),'notes' => array('updated-key' => 'An updated note.')));
 
 ```javascript: Node.js
 var instance = new Razorpay({ key_id: 'YOUR_KEY_ID', key_secret: 'YOUR_SECRET' })
@@ -170,7 +170,7 @@ instance.invoices.edit(invoiceId,{
     {
       name: "Book / A Wild Sheep Chase",
       amount: 200,
-      currency: "",
+      currency: "INR",
       quantity: 1
     }
   ],
@@ -193,7 +193,7 @@ lineItems.Add("quantity", 1);
 Dictionary lineItems1 = new Dictionary();
 lineItems1.Add("name", "Book / A Wild Sheep Chase");
 lineItems1.Add("amount", "200");
-lineItems1.Add("currency", "");
+lineItems1.Add("currency", "INR");
 lineItems1.Add("quantity", 1);
 lines.Add(lineItems);
 lines.Add(lineItems1);
@@ -249,7 +249,7 @@ Invoice invoice = client.Invoice.Fetch(invoiceId).Edit(invoiceRequest);
       "tax_amount": 0,
       "taxable_amount": 400,
       "net_amount": 400,
-      "currency": "",
+      "currency": "INR",
       "type": "invoice",
       "tax_inclusive": false,
       "hsn_code": null,
@@ -270,7 +270,7 @@ Invoice invoice = client.Invoice.Fetch(invoiceId).Edit(invoiceRequest);
       "tax_amount": 0,
       "taxable_amount": 200,
       "net_amount": 200,
-      "currency": "",
+      "currency": "INR",
       "type": "invoice",
       "tax_inclusive": false,
       "hsn_code": null,
@@ -299,7 +299,7 @@ Invoice invoice = client.Invoice.Fetch(invoiceId).Edit(invoiceRequest);
   "amount": 600,
   "amount_paid": null,
   "amount_due": null,
-  "currency": "",
+  "currency": "INR",
   "currency_symbol": "",
   "description": "This is a test invoice.",
   "notes": {

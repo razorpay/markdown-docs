@@ -856,7 +856,7 @@ Order order = client.Order.Create(orderRequest);
          var options = {
          description: 'Credits towards consultation',
          image: 'https://i.imgur.com/3g7nmJC.jpg',
-         currency: '',
+         currency: 'INR',
          key: '',
          amount: '50000',
          name: 'Acme Corp',

@@ -62,7 +62,7 @@ Pass the `order_id` received in response in the subsequent API calls as the iden
     -H "content-type: application/json" \
     -d '{
       "amount": 50000,
-      "currency": "",
+      "currency": "INR",
       "receipt": "receipt#22",
       "notes": {
           "key1": "value3",
@@ -142,7 +142,7 @@ Pass the `order_id` received in response in the subsequent API calls as the iden
 
     JSONObject paymentRequest = new JSONObject();
     paymentRequest.put("amount", 50000);
-    paymentRequest.put("currency", "");
+    paymentRequest.put("currency", "INR");
     paymentRequest.put("receipt", "receipt#22");
 
     JSONObject notes = new JSONObject();
@@ -241,7 +241,7 @@ Pass the `order_id` received in response in the subsequent API calls as the iden
 
     client.order.create({
       "amount": 50000,
-      "currency": "",
+      "currency": "INR",
       "receipt": "receipt#22",
       "notes": {
         "key1": "value3",
@@ -324,7 +324,7 @@ Pass the `order_id` received in response in the subsequent API calls as the iden
 
     para_attr := map[string]interface{}{
       "amount":    50000,
-      "currency":  "",
+      "currency":  "INR",
       "receipt":   "receipt#22",
       "notes": map[string]interface{}{
         "key1": "value3",
@@ -408,7 +408,7 @@ Pass the `order_id` received in response in the subsequent API calls as the iden
 
     $api->order->create(array(
       'amount' => 50000,
-      'currency' => '',
+      'currency' => 'INR',
       'receipt' => 'receipt#22',
       'notes' => array(
           'key1' => 'value3',
@@ -491,7 +491,7 @@ Pass the `order_id` received in response in the subsequent API calls as the iden
 
     para_attr = {
       "amount": 50000,
-      "currency": "",
+      "currency": "INR",
       "receipt": "receipt#22",
       "notes": {
         "key1": "value3",
@@ -573,7 +573,7 @@ Pass the `order_id` received in response in the subsequent API calls as the iden
 
     instance.orders.create({
       "amount": 50000,
-      "currency": "",
+      "currency": "INR",
       "receipt": "receipt#22",
       "notes": {
           "key1": "value3",
@@ -653,7 +653,7 @@ Pass the `order_id` received in response in the subsequent API calls as the iden
 
     Dictionary paymentRequest = new Dictionary();
     paymentRequest.Add("amount", 50000);
-    paymentRequest.Add("currency", "");
+    paymentRequest.Add("currency", "INR");
     paymentRequest.Add("receipt", "receipt#22");
 
     Dictionary notes = new Dictionary();
@@ -754,7 +754,7 @@ Pass the `order_id` received in response in the subsequent API calls as the iden
       "attempts": 0,
       "cod_fee": 100,
       "created_at": 1717661191,
-      "currency": "",
+      "currency": "INR",
       "customer_details": [
         {
           "billing_address": {

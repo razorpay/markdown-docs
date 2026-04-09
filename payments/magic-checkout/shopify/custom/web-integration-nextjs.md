@@ -464,7 +464,7 @@ You must pass these parameters in Checkout to initiate the payment.
        "order_id": "#32697",
        "payment_id": "pay_Rk3b76fSqXXXXX",
        "payment_method": "netbanking",
-       "payment_currency": "",
+       "payment_currency": "INR",
        "total_amount": 659430,
        "total_tax": "543.91",
        "shipping_fee": 700,
