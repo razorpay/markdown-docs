@@ -80,3 +80,9 @@ description: Find answers to frequently asked questions about Razorpay Internati
 ### 10. How does the settlement happen for international payments?
 
      The Settlement currency is INR (Indian rupees) for all transactions made using Razorpay. Thus, international payments are settled in INR. The exchange rate at the time of the payment creation is considered for conversion.
+
+### 11. Can I create invoices in 3-decimal or 0-decimal currencies?
+
+     No. Razorpay Invoices do not support 3-decimal or 0-decimal currencies. This means you cannot create invoices in 3-decimal currencies such as Kuwaiti Dinar (KWD), Omani Rial (OMR), Bahraini Dinar (BHD), Jordanian Dinar (JOD), Libyan Dinar (LYD) and Tunisian Dinar (TND), or in 0-decimal currencies such as Japanese Yen (JPY) and Indonesian Rupiah (IDR).
+
+     The creation of invoices in 3-decimal and 0-decimal currencies is disabled in the Razorpay Dashboard. To raise an invoice for the currencies listed above, you must first convert the amount to a supported 2-decimal currency such as [USD or other supported international currencies](https://raw.githubusercontent.com/razorpay/markdown-docs/master/payments/international-payments.md#supported-currencies).
