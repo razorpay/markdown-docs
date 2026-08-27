@@ -14,7 +14,7 @@ description: Find answers to frequently asked questions about Razorpay Invoices.
     
 ### 2. Can I raise invoices in international currency using Razorpay Invoices?
 
-         Yes, you can create non-GST invoices in any of the [supported international currencies](https://raw.githubusercontent.com/razorpay/markdown-docs/master/payments/international-payments.md#supported-currencies) using the Dashboard or APIs.
+         Yes, you can create non-GST invoices in the [supported international currencies](https://raw.githubusercontent.com/razorpay/markdown-docs/master/payments/international-payments.md#supported-currencies) using the Dashboard or APIs. However, [3-decimal and 0-decimal currencies, such as KWD, OMR, BHD and JPY, are not supported for invoices](https://raw.githubusercontent.com/razorpay/markdown-docs/master/payments/international-payments/faqs.md#11-can-i-create-invoices-in-3-decimal-or-0-decimal-currencies).
         
 
     
