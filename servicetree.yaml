@@ -1,0 +1,32 @@
+service: markdown-docs  # required, canonical slug — immutable once registered
+displayName: "Razorpay Docs (Markdown)"  # required, human-readable name — the repo holds the Markdown build of razorpay.com/docs rather than a service; "markdown-docs" alone reads like a tool, so the name states what the content is. The repo's own README is still the unmodified "# template / Used for creating new repo's" stub
+description: "The Markdown build of razorpay.com/docs: 2,214 published documentation pages across every product (payments, X, payroll, POS, Engage, partners, webhooks, errors, MCP server), bot-synced from razorpay/docs and served over raw.githubusercontent so AI tools and agents can fetch plain-text versions of the docs via razorpay.com/docs/llms.txt."  # required, one-sentence description of what the service does — _manifest.json ("version 1.0", generated 2026-04-09, "total": 2214, base_url https://raw.githubusercontent.com/razorpay/markdown-docs/master/, one route entry per page with title/description/category), _url-md-map.json mapping each /docs/... URL to its raw Markdown file, llms-txt.md ("We host an llms.txt file which instructs AI tools and agents how to retrieve the plain text versions of our pages"), the per-product top-level folders, and the commit history — every content commit is razorpay-docs-bot "chore: sync LLM content from razorpay/docs@<sha>"
+type: library  # required, one of: service | worker | cron | library | pipeline — a content repository with no deployment of its own: no Dockerfile, helm chart, Spinnaker application, Netra deployment or source code, only Markdown plus two generated index files. It is consumed as shared content by razorpay.com/docs' plain-text and llms.txt endpoints, which is the "shared code, no deployment" case
+tier: T2  # required, one of: T0 | T1 | T2 | T3 · Payments Reliability sheet Priority P2 → T2; kept — nothing pages on it and it holds no runtime, but it is not T3 either because the public docs' plain-text/LLM surface reads from it
+lifecycle: live  # optional, one of: incubating | live | deprecated | retired (default: live)
+
+domain: pg-growth/checkout  # required, two-level domain/subgroup slug — the Payments Reliability sheet has no BU for this repo and it has neither CODEOWNERS nor .github/repo_owners.json, so ownership is derived from its upstream: every content commit is razorpay-docs-bot syncing from razorpay/docs, whose .github/repo_owners.json is business_unit "Payments", group/sub_group "Magic", pod "Experience (Buyer Experience, Configurability)" (EM hitesh.mahipal@razorpay.com), and which the rzp-discover repo map lists in the Checkout sub-group. Family pg-growth follows from that BU/group; area "checkout" rather than "magic-checkout" because this is the whole docs corpus, not the 1CC product. TO VERIFY: the docs content itself is written by the technical-writing team (#tech_docs), so a reviewer may prefer to place it with them instead
+
+owner:
+  team:  # required, owning team slug — TO FILL: this repo has no CODEOWNERS file, .github/repo_owners.json carries no team slug, and the GitHub repository-teams API is not readable with the current token; ask the POD lead for the owning GitHub team
+  pm:  # product manager — TO FILL: no PM is named in .github/repo_owners.json, there is no DevRev runnable for this service, and deriving one from the org tree is unreliable. Ask the POD lead.
+
+links:
+  repo: "https://github.com/razorpay/markdown-docs"  # canonical GitHub repo URL
+  alerts_repo:  # this service's alert rules in razorpay/alert-rules — TO FILL: no matching ruleset found; add one in razorpay/alert-rules, then link the file here
+  slos:  # SLO definitions — TO FILL: no slo.yaml at this repo root and no sloth ruleset for it under razorpay/alert-rules/slo/prod (the two places SLOs are defined today); add one there and link it here
+  slack_channel: "#tech_docs"  # primary Slack channel for this service — 530 members, purpose "Razorpay Documentation" and topic "For documentation requests" with the per-product technical writers named; it is where doc changes that land here originate. #tech_docs_prs_reviews (5) is the GitHub/Jira notification feed for it
+  zenduty_policy:  # Zenduty policy/service name used for paging — TO FILL: the service-to-policy mapping is not in DevRev or alert-rules for this service; it lives in the external Zenduty policies sheet
+  oncall_handle:  # Slack/PagerDuty oncall handle or usergroup — TO FILL: not set on the DevRev runnable
+  runbook:  # link to the incident runbook — TO FILL: no runbook directory for this service in razorpay/rzp-oncall-agent; add one or link the Google Doc / alpha.razorpay.com page
+  api_docs:  # API documentation — TO FILL: no swagger/openapi/proto found in the repo tree; link the API spec or Postman collection
+  dashboard:  # primary dashboard — TO FILL: Grafana (vajra) / Coralogix dashboard URL for this service (see per-region links below)
+  logs_and_traces: "https://razorpay-prod.app.coralogix.in/#/query-new/archive-logs"  # org-standard prod Coralogix — filter subsystem "markdown-docs"
+  strategy_okr:  # TO FILL: link the FY strategy doc for the owning group.
+  risk_assessment:  # TO FILL: no .agents/skills/risk-assessment in this repo; add the per-repo risk-assessment skill
+  regions:  # per-region links — TO FILL: no prod region deployment found for this service in spinacode or alert-rules; add a block per geography once it ships
+
+dependencies: []  # optional, declared service dependencies — TO FILL: shape: - service: <slug> for internal deps, - vendor: <name> for external (gateways, banks)
+
+
+# Note for the catalog: this repo is generated, not authored. Content arrives only as razorpay-docs-bot commits ("chore: sync LLM content from razorpay/docs@<sha>") merged by PR, so the source of truth for any page is razorpay/docs — fix docs there, not here. _manifest.json and _url-md-map.json are regenerated by the same sync and are the machine-readable index behind razorpay.com/docs/llms.txt. The README is still the new-repo template stub.
